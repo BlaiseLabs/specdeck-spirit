@@ -1,5 +1,5 @@
 ---
-title: "A float broke my refund rule, and Leviticus had an opinion"
+title: "From Spec-Driven to Faith-Driven Development"
 published: true
 tags: devchallenge, hf26challenge, gemma, python
 cover_image: https://raw.githubusercontent.com/BlaiseLabs/specdeck-spirit/main/docs/article/spirit.gif
