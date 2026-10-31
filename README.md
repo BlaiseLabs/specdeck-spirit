@@ -6,7 +6,7 @@ specdeck keeps each rule as a requirement with a statement, a reason and a check
 
 ```
 specdeck: rule rules.decimal-money broken
-  "RESULT_VERSE" (RESULT_REF)
+  "Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure." (Leviticus 19:35)
 ```
 
 Everything else specdeck does is unchanged, and it's all documented below the line further down.
@@ -64,6 +64,22 @@ specdeck spirit add-text gurbani gurbani.jsonl --title "Guru Granth Sahib" --tra
 The model only ever answers with a number. The quote comes out of the fetched text, so it can't invent a verse, and `specdeck spirit check` compares every quote with the text again. Further reading is counted from where the searches landed, so every part it names exists. The model only says why it might be worth reading.
 
 Choices go in `spirit.yaml`, which you commit with the project. A passage stays `proposed` until you keep it. A why that changes needs aligning again, and `check` says so.
+
+## What came out on a small shop project
+
+`examples/agent-rules/spirit.yaml` has the alignments for all ten texts on a small shop's five reasons, and `SPIRIT.md` next to it reads them out. For the rule that money has to be Decimal, because a float once made a refund one cent short:
+
+| Text | Passage |
+|---|---|
+| Bible | "Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure." (Leviticus 19:35) |
+| Tanakh | The same verse in the 1917 translation |
+| Qur'an | "O my people! Give full measure and full weight in justice, and wrong not people in respect of their goods." (Surah Hud 11:85) |
+| Dhammapada | "Life is hard for the conscientious, always seeking purity, neither clinging nor rude, pure of livelihood and discerning." (Dhammapada 245) |
+| Analects | Confucius on rectifying names, because if names aren't correct, affairs can't succeed (XIII.III) |
+| Kojiki | No passage fits |
+| Book of Mormon | No passage fits |
+
+41 of the 50 pairs got a passage and 9 were left with none. `bench/spirit/eval.py` gave each chosen passage and a random one from the same text to Gemma, blind, to score from 0 to 3. Chosen passages averaged 1.98 and random ones 0.49, and the chosen one scored higher in 32 of 41. The same model chose and marked, so this only shows it beats chance. Some matches are still a stretch, like Leviticus 19:35 for a rule about UTC timestamps. All 41 came out as affirming the reason and none as challenging it, even though the prompt allows both.
 
 ## What this is not
 

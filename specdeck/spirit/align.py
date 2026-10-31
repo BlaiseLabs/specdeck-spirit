@@ -57,7 +57,9 @@ It opens:
 Passages from it that came up, and the reasons they were near:
 {hits}
 
-In one plain sentence, say why someone working on this project might read this part in full. Answer with JSON only:
+In one plain sentence that starts with "It", say what this part of the text is about and what someone working on this
+project might take from reading it in full. Say only what the opening and the passages show. Don't guess at the project or
+at what the reader is looking for. Answer with JSON only:
 {{"why": "..."}}"""
 
 REFLECT = """A software project exists for this purpose: {purpose}

@@ -1,0 +1,42 @@
+{"text": "dhammapada", "rule": "(purpose)", "ref": "Dhammapada 1", "random_ref": "Dhammapada 69", "random": 1, "chosen": 2}
+{"text": "dhammapada", "rule": "rules.decimal-money", "ref": "Dhammapada 245", "random_ref": "Dhammapada 131", "random": 0, "chosen": 2}
+{"text": "dhammapada", "rule": "rules.utc-clock", "ref": "Dhammapada 293", "random_ref": "Dhammapada 254", "chosen": 0, "random": 0}
+{"text": "dhammapada", "rule": "rules.i18n", "ref": "Dhammapada 270", "random_ref": "Dhammapada 242", "chosen": 1, "random": 0}
+{"text": "gita-arnold", "rule": "(purpose)", "ref": "Bhagavad Gita, Chapter III, passage 6", "random_ref": "Bhagavad Gita, Chapter XVIII, passage 20", "random": 1, "chosen": 2}
+{"text": "gita-arnold", "rule": "rules.decimal-money", "ref": "Bhagavad Gita, Chapter III, passage 7", "random_ref": "Bhagavad Gita, Chapter II, passage 13", "chosen": 2, "random": 2}
+{"text": "gita-arnold", "rule": "rules.utc-clock", "ref": "Bhagavad Gita, Chapter XVIII, passage 7", "random_ref": "Bhagavad Gita, Chapter I, passage 8", "chosen": 2, "random": 0}
+{"text": "gita-arnold", "rule": "rules.i18n", "ref": "Bhagavad Gita, Chapter XVIII, passage 7", "random_ref": "Bhagavad Gita, Chapter X, passage 7", "random": 0, "chosen": 2}
+{"text": "gita-arnold", "rule": "done.tests-pass", "ref": "Bhagavad Gita, Chapter XVIII, passage 14", "random_ref": "Bhagavad Gita, Chapter XVII, passage 4", "chosen": 2, "random": 2}
+{"text": "kojiki", "rule": "(purpose)", "ref": "Kojiki, Section 105 (2)", "random_ref": "Kojiki, Section 40 (9)", "random": 3, "chosen": 2}
+{"text": "kojiki", "rule": "done.tests-pass", "ref": "Kojiki, Section 10", "random_ref": "Kojiki, Section 106 (3)", "random": 0, "chosen": 0}
+{"text": "tao-te-ching", "rule": "(purpose)", "ref": "Tao Te Ching 7", "random_ref": "Tao Te Ching 47", "random": 0, "chosen": 2}
+{"text": "tao-te-ching", "rule": "rules.decimal-money", "ref": "Tao Te Ching 25, passage 2", "random_ref": "Tao Te Ching 3, passage 1", "random": 0, "chosen": 0}
+{"text": "tao-te-ching", "rule": "rules.utc-clock", "ref": "Tao Te Ching 32, passage 2", "random_ref": "Tao Te Ching 79, passage 2", "random": 0, "chosen": 1}
+{"text": "tao-te-ching", "rule": "done.tests-pass", "ref": "Tao Te Ching 73, passage 2", "random_ref": "Tao Te Ching 57, passage 1", "random": 2, "chosen": 2}
+{"text": "analects", "rule": "(purpose)", "ref": "Analects XV.V", "random_ref": "Analects XV.XXXVII", "random": 2, "chosen": 3}
+{"text": "analects", "rule": "rules.decimal-money", "ref": "Analects XIII.III", "random_ref": "Analects IX.XXII", "chosen": 2, "random": 0}
+{"text": "analects", "rule": "rules.utc-clock", "ref": "Analects XIII.III", "random_ref": "Analects XIX.VI", "random": 2, "chosen": 2}
+{"text": "analects", "rule": "rules.i18n", "ref": "Analects XII.II", "random_ref": "Analects XIV.VI", "random": 0, "chosen": 2}
+{"text": "analects", "rule": "done.tests-pass", "ref": "Analects XIII.III (2)", "random_ref": "Analects IX.XIX", "chosen": 3, "random": 2}
+{"text": "meditations", "rule": "(purpose)", "ref": "Meditations, Eighth Book, II", "random_ref": "Meditations, Seventh Book, XVII", "random": 0, "chosen": 2}
+{"text": "meditations", "rule": "rules.decimal-money", "ref": "Meditations, Fourth Book, VIII", "random_ref": "Meditations, Ninth Book, X", "random": 2, "chosen": 2}
+{"text": "meditations", "rule": "rules.utc-clock", "ref": "Meditations, Seventh Book, VI", "random_ref": "Meditations, Fifth Book, XVIII", "chosen": 2, "random": 1}
+{"text": "meditations", "rule": "rules.i18n", "ref": "Meditations, Ninth Book, XXI", "random_ref": "Meditations, Fourth Book, XXI", "chosen": 2, "random": 0}
+{"text": "meditations", "rule": "done.tests-pass", "ref": "Meditations, Sixth Book, III", "random_ref": "Meditations, Tenth Book, XXVII", "chosen": 2, "random": 0}
+{"text": "bible-kjv", "rule": "(purpose)", "ref": "Leviticus 19:35", "random_ref": "Proverbs 8:34", "random": 0, "chosen": 2}
+{"text": "bible-kjv", "rule": "rules.decimal-money", "ref": "Leviticus 19:35", "random_ref": "2 Kings 15:15", "chosen": 2, "random": 0}
+{"text": "bible-kjv", "rule": "rules.i18n", "ref": "Galatians 5:14", "random_ref": "Jeremiah 12:4", "chosen": 2, "random": 0}
+{"text": "tanakh-jps", "rule": "(purpose)", "ref": "Leviticus 19:35", "random_ref": "Psalms 86:12", "chosen": 3, "random": 0}
+{"text": "tanakh-jps", "rule": "rules.decimal-money", "ref": "Leviticus 19:35", "random_ref": "Job 30:29", "random": 0, "chosen": 3}
+{"text": "tanakh-jps", "rule": "rules.utc-clock", "ref": "Leviticus 19:35", "random_ref": "Psalms 39:4", "random": 0, "chosen": 2}
+{"text": "tanakh-jps", "rule": "rules.i18n", "ref": "Numbers 15:16", "random_ref": "Ezekiel 19:12", "chosen": 2, "random": 0}
+{"text": "tanakh-jps", "rule": "done.tests-pass", "ref": "Psalms 101:2", "random_ref": "I Chronicles 8:19", "random": 0, "chosen": 2}
+{"text": "quran-pickthall", "rule": "(purpose)", "ref": "Surah Hud 11:85", "random_ref": "Surah Ash-Shu'araa 26:76", "chosen": 3, "random": 0}
+{"text": "quran-pickthall", "rule": "rules.decimal-money", "ref": "Surah Hud 11:85", "random_ref": "Surah Al-Maaida 5:40", "chosen": 3, "random": 0}
+{"text": "quran-pickthall", "rule": "rules.utc-clock", "ref": "Surah Al-Israa 17:35", "random_ref": "Surah Nooh 71:19", "random": 0, "chosen": 2}
+{"text": "quran-pickthall", "rule": "done.tests-pass", "ref": "Surah Al-Baqara 2:42", "random_ref": "Surah At-Tawba 9:107", "chosen": 2, "random": 0}
+{"text": "book-of-mormon", "rule": "(purpose)", "ref": "Mosiah 13:23", "random_ref": "Alma 18:27", "chosen": 2, "random": 0}
+{"text": "book-of-mormon", "rule": "rules.utc-clock", "ref": "Alma 37:2", "random_ref": "Ether 2:7", "random": 0, "chosen": 2}
+{"text": "book-of-mormon", "rule": "rules.i18n", "ref": "2 Nephi 31:3", "random_ref": "Alma 46:1", "random": 0, "chosen": 3}
+{"text": "book-of-mormon", "rule": "done.tests-pass", "ref": "Alma 53:21", "random_ref": "Alma 2:21", "chosen": 2, "random": 0}
+41 passages, chosen mean 1.98, random mean 0.49, chosen higher in 32, tied in 8, no passage for 9

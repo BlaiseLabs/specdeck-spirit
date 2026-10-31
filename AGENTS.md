@@ -28,6 +28,12 @@ A rule's test checks the rule. Making the test pass without keeping the rule (a 
   Why: specdeck is added to other people's test suites. Each extra dependency is a version conflict waiting in someone else's environment. Optional features (coverage mapping) load their libraries when asked for.
   Checked by: no new dependencies — holds in the last run
   Verified by: `tests/test_constraints.py::test_specdeck_installs_with_pytest_and_pyyaml_alone` — holds in the last run
+- **A quoted passage shall be the fetched text's own words, whatever the model answers.** (`spirit.quotes-are-the-texts`)
+  Why: People read these as scripture. A model that writes a verse that doesn't exist would put words in a holy text, so the model only ever chooses a passage by its number.
+  Verified by: `tests/test_spirit.py::test_the_quote_is_the_texts_own_whatever_the_model_says` — holds in the last run
+- **The layer shall reach models only through a local Ollama address unless the person sets another.** (`spirit.local-models`)
+  Why: Someone's faith and their project's reasons are private, and the open models are what makes the feature work.
+  Verified by inspection, not by a test: check it yourself before finishing.
 
 ### Standards compliance (§9.6.17)
 

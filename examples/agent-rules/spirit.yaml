@@ -1,0 +1,2342 @@
+# Each reason in requirements.yaml next to a passage from the text this project's people chose.
+# Written by `specdeck spirit align`; `status` is theirs to change: proposed, kept or rejected.
+active: bible-kjv
+texts:
+  dhammapada:
+    title: The Dhammapada
+    tradition: Buddhist
+    translation: Bhikkhu Sujato, 2018
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: The integrity of one's word and the practice of honest commerce.
+        ref: Dhammapada 1
+        quote: Intention is the leader of things; intention is first, they’re made by intention. If with
+          corrupt intent you speak or act, suffering follows you, like a wheel, the ox’s foot.
+        read_further: Chapter 1. Pairs
+        relation: affirms
+        how: This passage highlights that the integrity of commerce begins with the internal intention
+          behind the action. It warns that dishonest dealings (corrupt intent) lead to negative consequences,
+          reinforcing the importance of honest conduct.
+        status: proposed
+        near:
+        - ref: Dhammapada 1
+          book: Chapter 1. Pairs
+          score: 0.534
+        - ref: Dhammapada 169
+          book: Chapter 13. The World
+          score: 0.481
+        - ref: Dhammapada 168
+          book: Chapter 13. The World
+          score: 0.476
+        - ref: Dhammapada 281
+          book: Chapter 20. The Path
+          score: 0.474
+        - ref: Dhammapada 165
+          book: Chapter 12. The Self
+          score: 0.463
+        - ref: Dhammapada 232
+          book: Chapter 17. Anger
+          score: 0.463
+        - ref: Dhammapada 51
+          book: Chapter 4. Flowers
+          score: 0.46
+        - ref: Dhammapada 24
+          book: Chapter 2. Diligence
+          score: 0.454
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The desire for absolute integrity and the avoidance of hidden errors or deceit.
+        ref: Dhammapada 245
+        quote: Life is hard for the conscientious, always seeking purity, neither clinging nor rude, pure
+          of livelihood and discerning.
+        read_further: Chapter 18. Stains
+        relation: affirms
+        how: This passage speaks to the dedication of the conscientious person who seeks purity in their
+          livelihood. It mirrors the developer's commitment to technical integrity as a form of ethical
+          practice.
+        status: proposed
+        near:
+        - ref: Dhammapada 293
+          book: Chapter 21. Miscellaneous
+          score: 0.533
+        - ref: Dhammapada 39
+          book: Chapter 3. The Mind
+          score: 0.514
+        - ref: Dhammapada 245
+          book: Chapter 18. Stains
+          score: 0.506
+        - ref: Dhammapada 278
+          book: Chapter 20. The Path
+          score: 0.504
+        - ref: Dhammapada 1
+          book: Chapter 1. Pairs
+          score: 0.498
+        - ref: Dhammapada 279
+          book: Chapter 20. The Path
+          score: 0.489
+        - ref: Dhammapada 277
+          book: Chapter 20. The Path
+          score: 0.489
+        - ref: Dhammapada 165
+          book: Chapter 12. The Self
+          score: 0.482
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of accuracy and integrity in representing the truth of the present moment.
+        ref: Dhammapada 293
+        quote: Those that have properly undertaken constant mindfulness of the body, don’t cultivate what
+          should not be done, but always do what should be done. Mindful and aware, their defilements
+          come to an end.
+        read_further: Chapter 21. Miscellaneous
+        relation: affirms
+        how: This passage emphasizes that constant mindfulness leads to doing what 'should be done' rather
+          than what 'should not be done.' In this context, it affirms the developer's commitment to precision
+          as a form of mindfulness that ensures the integrity of the system's truth.
+        status: proposed
+        near:
+        - ref: Dhammapada 293
+          book: Chapter 21. Miscellaneous
+          score: 0.478
+        - ref: Dhammapada 218
+          book: Chapter 16. The Beloved
+          score: 0.446
+        - ref: Dhammapada 39
+          book: Chapter 3. The Mind
+          score: 0.445
+        - ref: Dhammapada 273
+          book: Chapter 20. The Path
+          score: 0.443
+        - ref: Dhammapada 36
+          book: Chapter 3. The Mind
+          score: 0.432
+        - ref: Dhammapada 364
+          book: Chapter 25. Mendicants
+          score: 0.43
+        - ref: Dhammapada 281
+          book: Chapter 20. The Path
+          score: 0.42
+        - ref: Dhammapada 1
+          book: Chapter 1. Pairs
+          score: 0.414
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The moral obligation to be inclusive and considerate of others' limitations.
+        ref: Dhammapada 270
+        quote: You don’t become a noble one by harming living beings. One harmless toward all living beings
+          is said to be a noble one.
+        read_further: Chapter 19. The Just
+        relation: affirms
+        how: The concept of being 'harmless toward all living beings' can be interpreted as a commitment
+          to avoid causing unnecessary frustration or technical barriers for others. In this context,
+          ensuring accessibility for all users is a way of practicing non-harming in a digital space.
+        status: proposed
+        near:
+        - ref: Dhammapada 331
+          book: Chapter 23. Elephants
+          score: 0.496
+        - ref: Dhammapada 365
+          book: Chapter 25. Mendicants
+          score: 0.493
+        - ref: Dhammapada 270
+          book: Chapter 19. The Just
+          score: 0.478
+        - ref: Dhammapada 368
+          book: Chapter 25. Mendicants
+          score: 0.454
+        - ref: Dhammapada 210
+          book: Chapter 16. The Beloved
+          score: 0.452
+        - ref: Dhammapada 278
+          book: Chapter 20. The Path
+          score: 0.451
+        - ref: Dhammapada 32
+          book: Chapter 2. Diligence
+          score: 0.445
+        - ref: Dhammapada 361
+          book: Chapter 25. Mendicants
+          score: 0.436
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity by refusing to ignore small flaws or dishonest shortcuts.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Dhammapada 293
+          book: Chapter 21. Miscellaneous
+          score: 0.533
+        - ref: Dhammapada 223
+          book: Chapter 17. Anger
+          score: 0.505
+        - ref: Dhammapada 50
+          book: Chapter 4. Flowers
+          score: 0.504
+        - ref: Dhammapada 168
+          book: Chapter 13. The World
+          score: 0.495
+        - ref: Dhammapada 167
+          book: Chapter 13. The World
+          score: 0.493
+        - ref: Dhammapada 116
+          book: Chapter 9. Wickedness
+          score: 0.492
+        - ref: Dhammapada 253
+          book: Chapter 18. Stains
+          score: 0.49
+        - ref: Dhammapada 242
+          book: Chapter 18. Stains
+          score: 0.487
+    reading:
+    - read: Chapter 21. Miscellaneous
+      score: 2.54
+      why: It describes the transition from seeking superficial happiness through harmful actions to achieving
+        true freedom through mindfulness and discipline, suggesting that a developer should prioritize
+        diligent, correct actions over negligent habits to resolve underlying issues.
+      passages: 1
+    - read: Chapter 1. Pairs
+      score: 1.69
+      why: It describes how intention governs all actions and consequences, suggesting that a worker should
+        approach tasks like taking orders with pure, honest intent to ensure positive outcomes and the
+        resolution of conflict.
+      passages: 1
+    - read: Chapter 18. Stains
+      score: 1.3
+      why: It describes the urgency of spiritual purification and self-reliance in the face of mortality,
+        suggesting that a worker should strive for precision and the removal of errors to achieve a flawless
+        state.
+      passages: 1
+    - read: Chapter 19. The Just
+      score: 1.16
+      why: It describes the qualities of a just and astute person as those who judge impartially, avoid
+        hasty conclusions, and possess deep understanding over mere repetition, suggesting that a project
+        worker should prioritize thorough evaluation and meaningful comprehension over superficial speed
+        or volume.
+      passages: 1
+    - read: Chapter 20. The Path
+      score: 0.64
+      why: This text describes the Eightfold Path as the exclusive means to end suffering and overcome
+        obstacles, emphasizing that while a guide can show the way, the individual must perform the work
+        themselves.
+      passages: 0
+    reflection: The project treats technical precision and accessibility as moral responsibilities rather
+      than just functional requirements. It views the integrity of data and the reduction of user frustration
+      as a form of conscientious practice. The work seeks to align the hidden mechanics of the software
+      with a commitment to honesty and mindfulness.
+  gita-arnold:
+    title: The Bhagavad Gita
+    tradition: Hindu
+    translation: The Song Celestial, Edwin Arnold, 1885
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: Performing one's duty with integrity and precision for the sake of others.
+        ref: Bhagavad Gita, Chapter III, passage 6
+        quote: Therefore, thy task prescribed With spirit unattached gladly perform, Since in performance
+          of plain duty man Mounts to his highest bliss. By works alone Janak and ancient saints reached
+          blessedness! Moreover, for the upholding of thy kind, Action thou should'st embrace. What the
+          wise choose The unwise people take; what best men do The multitude will follow. Look on me,
+          Thou Son of Pritha! in the three wide worlds I am not bound to any toil, no height Awaits to
+          scale, no gift remains to gain, Yet I act here!
+        read_further: Chapter III
+        relation: affirms
+        how: This passage emphasizes performing one's prescribed duty with a spirit of unattachment for
+          the sake of others. It directly supports the idea that fulfilling one's specific role with integrity
+          leads to a higher state of being.
+        status: proposed
+        near:
+        - ref: Bhagavad Gita, Chapter II, passage 13
+          book: Chapter II
+          score: 0.559
+        - ref: Bhagavad Gita, Chapter III, passage 6
+          book: Chapter III
+          score: 0.537
+        - ref: Bhagavad Gita, Chapter III, passage 9
+          book: Chapter III
+          score: 0.498
+        - ref: Bhagavad Gita, Chapter XVIII, passage 14
+          book: Chapter XVIII
+          score: 0.492
+        - ref: Bhagavad Gita, Chapter IV, passage 9
+          book: Chapter IV
+          score: 0.476
+        - ref: Bhagavad Gita, Chapter II, passage 14
+          book: Chapter II
+          score: 0.474
+        - ref: Bhagavad Gita, Chapter III, passage 3
+          book: Chapter III
+          score: 0.471
+        - ref: Bhagavad Gita, Chapter XVII, passage 5
+          book: Chapter XVII
+          score: 0.471
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The moral obligation to maintain absolute integrity and precision in one's dealings with
+          others.
+        ref: Bhagavad Gita, Chapter III, passage 7
+        quote: and, if I acted not-- Earnest and watchful--those that look to me For guidance, sinking
+          back to sloth again Because I slumbered, would decline from good, And I should break earth's
+          order and commit Her offspring unto ruin, Bharata! Even as the unknowing toil, wedded to sense,
+          So let the enlightened toil, sense-freed, but set To bring the world deliverance, and its bliss;
+          Not sowing in those simple, busy hearts Seed of despair. Yea! let each play his part In all
+          he finds to do, with unyoked soul. All things are everywhere by Nature wrought In interaction
+          of the qualities. The fool, cheated by self, thinks, "This I did" And "That I wrought;
+        read_further: Chapter III
+        relation: affirms
+        how: This passage emphasizes the importance of being 'earnest and watchful' to prevent the world
+          from falling into ruin or disorder. It supports the developer's view that even a small oversight
+          in precision can have a cascading effect on the integrity of the system.
+        status: proposed
+        near:
+        - ref: Bhagavad Gita, Chapter II, passage 13
+          book: Chapter II
+          score: 0.436
+        - ref: Bhagavad Gita, Chapter XVIII, passage 3
+          book: Chapter XVIII
+          score: 0.435
+        - ref: Bhagavad Gita, Chapter XVIII, passage 14
+          book: Chapter XVIII
+          score: 0.434
+        - ref: Bhagavad Gita, Chapter III, passage 9
+          book: Chapter III
+          score: 0.429
+        - ref: Bhagavad Gita, Chapter XIV, passage 4
+          book: Chapter XIV
+          score: 0.414
+        - ref: Bhagavad Gita, Chapter V, passage 2
+          book: Chapter V
+          score: 0.4
+        - ref: Bhagavad Gita, Chapter IV, passage 9
+          book: Chapter IV
+          score: 0.392
+        - ref: Bhagavad Gita, Chapter III, passage 7
+          book: Chapter III
+          score: 0.386
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of maintaining truth and accuracy in one's actions.
+        ref: Bhagavad Gita, Chapter XVIII, passage 7
+        quote: 'There is "right" Action: that which being enjoined-- Is wrought without attachment, passionlessly,
+          For duty, not for love, nor hate, nor gain. There is "vain" Action: that which men pursue Aching
+          to satisfy desires, impelled By sense of self, with all-absorbing stress: This is of Rajas--passionate
+          and vain. There is "dark" Action: when one doth a thing Heedless of issues, heedless of the
+          hurt Or wrong for others, heedless if he harm His own soul--''tis of Tamas, black and bad!'
+        read_further: Chapter XVIII
+        relation: affirms
+        how: This passage distinguishes 'right' action as that which is done for duty without being heedless
+          of the issues or the wrong it might cause. It directly supports the developer's concern for
+          accuracy by warning against 'dark' action, which is characterized by being heedless of the consequences
+          of one's work.
+        status: proposed
+        near:
+        - ref: Bhagavad Gita, Chapter II, passage 13
+          book: Chapter II
+          score: 0.491
+        - ref: Bhagavad Gita, Chapter XVII, passage 5
+          book: Chapter XVII
+          score: 0.491
+        - ref: Bhagavad Gita, Chapter IV, passage 5
+          book: Chapter IV
+          score: 0.475
+        - ref: Bhagavad Gita, Chapter V, passage 3
+          book: Chapter V
+          score: 0.472
+        - ref: Bhagavad Gita, Chapter III, passage 2
+          book: Chapter III
+          score: 0.472
+        - ref: Bhagavad Gita, Chapter XVIII, passage 7
+          book: Chapter XVIII
+          score: 0.47
+        - ref: Bhagavad Gita, Chapter XVIII, passage 5
+          book: Chapter XVIII
+          score: 0.464
+        - ref: Bhagavad Gita, Chapter IV, passage 10
+          book: Chapter IV
+          score: 0.455
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The moral obligation to be inclusive and considerate of others' needs.
+        ref: Bhagavad Gita, Chapter XVIII, passage 7
+        quote: 'There is "right" Action: that which being enjoined-- Is wrought without attachment, passionlessly,
+          For duty, not for love, nor hate, nor gain. There is "vain" Action: that which men pursue Aching
+          to satisfy desires, impelled By sense of self, with all-absorbing stress: This is of Rajas--passionate
+          and vain. There is "dark" Action: when one doth a thing Heedless of issues, heedless of the
+          hurt Or wrong for others, heedless if he harm His own soul--''tis of Tamas, black and bad!'
+        read_further: Chapter XVIII
+        relation: affirms
+        how: This passage defines 'dark' action as that which is done heedless of the hurt or wrong caused
+          to others. It supports the developer's concern by framing the exclusion of non-English speakers
+          as a form of 'dark' action that ignores the impact on the user.
+        status: proposed
+        near:
+        - ref: Bhagavad Gita, Chapter III, passage 9
+          book: Chapter III
+          score: 0.434
+        - ref: Bhagavad Gita, Chapter III, passage 7
+          book: Chapter III
+          score: 0.419
+        - ref: Bhagavad Gita, Chapter II, passage 13
+          book: Chapter II
+          score: 0.414
+        - ref: Bhagavad Gita, Chapter IX, passage 9
+          book: Chapter IX
+          score: 0.385
+        - ref: Bhagavad Gita, Chapter V, passage 1
+          book: Chapter V
+          score: 0.363
+        - ref: Bhagavad Gita, Chapter III, passage 6
+          book: Chapter III
+          score: 0.362
+        - ref: Bhagavad Gita, Chapter XVIII, passage 7
+          book: Chapter XVIII
+          score: 0.362
+        - ref: Bhagavad Gita, Chapter VI, passage 2
+          book: Chapter VI
+          score: 0.354
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity by refusing to ignore small flaws in one's duty.
+        ref: Bhagavad Gita, Chapter XVIII, passage 14
+        quote: Better thine own work is, though done with fault, Than doing others' work, ev'n excellently.
+          He shall not fall in sin who fronts the task Set him by Nature's hand! Let no man leave His
+          natural duty, Prince! though it bear blame! For every work hath blame, as every flame Is wrapped
+          in smoke! Only that man attains Perfect surcease of work whose work was wrought With mind unfettered,
+          soul wholly subdued, Desires for ever dead, results renounced. Learn from me, Son of Kunti!
+          also this, How one, attaining perfect peace, attains BRAHM, the supreme, the highest height
+          of all!
+        read_further: Chapter XVIII
+        relation: affirms
+        how: This passage emphasizes that one must not abandon their natural duty even if it bears blame,
+          suggesting that the integrity of performing the assigned task is paramount. It aligns with the
+          developer's refusal to skip a failing test by framing the completion of the duty as the primary
+          moral requirement.
+        status: proposed
+        near:
+        - ref: Bhagavad Gita, Chapter III, passage 9
+          book: Chapter III
+          score: 0.502
+        - ref: Bhagavad Gita, Chapter II, passage 13
+          book: Chapter II
+          score: 0.474
+        - ref: Bhagavad Gita, Chapter II, passage 14
+          book: Chapter II
+          score: 0.457
+        - ref: Bhagavad Gita, Chapter III, passage 7
+          book: Chapter III
+          score: 0.449
+        - ref: Bhagavad Gita, Chapter II, passage 9
+          book: Chapter II
+          score: 0.445
+        - ref: Bhagavad Gita, Chapter XVIII, passage 14
+          book: Chapter XVIII
+          score: 0.443
+        - ref: Bhagavad Gita, Chapter III, passage 6
+          book: Chapter III
+          score: 0.429
+        - ref: Bhagavad Gita, Chapter XVIII, passage 8
+          book: Chapter XVIII
+          score: 0.426
+    reading:
+    - read: Chapter III
+      score: 4.13
+      why: It is about the necessity of performing one's prescribed duties and the importance of precision
+        in action, suggesting that a worker must fulfill their specific responsibilities accurately and
+        diligently.
+      passages: 2
+    - read: Chapter XVIII
+      score: 3.81
+      why: It is about the distinction between renouncing the fruits of actions and renouncing actions
+        themselves, suggesting that a worker should focus on the integrity of the process and the underlying
+        truth of a problem rather than seeking shortcuts or avoiding the necessary work.
+      passages: 3
+    - read: Chapter II
+      score: 2.18
+      why: This text describes a warrior's internal conflict and moral hesitation in the face of duty,
+        suggesting that a reader might seek to overcome personal weakness, emotional paralysis, or the
+        difficulty of making hard decisions in a high-stakes environment.
+      passages: 0
+    - read: Chapter IV
+      score: 0.37
+      why: It describes the transmission of an ancient, perennial spiritual truth across generations and
+        the concept of the divine's recurring presence in different eras, suggesting to a reader that
+        their work may be part of a long-standing lineage or a timeless principle being renewed in the
+        present.
+      passages: 0
+    - read: Chapter XVII
+      score: 0.3
+      why: This text describes how human faith and behavior are governed by three fundamental qualities—Sattva
+        (goodness), Rajas (passion), and Tamas (darkness)—and suggests that an individual's spiritual
+        state and actions will naturally align with the nature of what they worship or pursue.
+      passages: 0
+    reflection: The project prioritizes technical precision and inclusive communication as a form of moral
+      responsibility. It views the integrity of the code and the accuracy of the data as a duty to prevent
+      harm and ensure the well-being of the users. It suggests that a developer's primary obligation is
+      to perform their role with total attentiveness to the consequences of their work.
+  kojiki:
+    title: The Kojiki
+    tradition: Shinto
+    translation: Basil Hall Chamberlain, 1882
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: The moral obligation to act with integrity and fulfill one's duties to others.
+        ref: Kojiki, Section 105 (2)
+        quote: His Augustness Oho-yama-mori to administer the government of the mountains and the sea,
+          His Augustness Oho-sazaki to take and deign to report on the government of the realm, and Uji-no-waki-iratsuko
+          to rule the succession of Heaven’s sun. So His Augustness Oho-sazaki was not disobedient to
+          the Heavenly Sovereign’s commands.
+        read_further: Section 105, Emperor Ō-jin (Part II.—He Divides the Inheritance Between His Three
+          Sons).
+        relation: affirms
+        how: This passage highlights the importance of being obedient to commands and fulfilling one's
+          assigned duties with integrity. It serves as a model for the software developer's goal of fulfilling
+          their professional obligations to others.
+        status: proposed
+        near:
+        - ref: Kojiki, Section 133 (5)
+          book: Section 133, Emperor Ri-chiū (Part III.—His Rebellious Brother and the Latter’s Retainer
+            Sobakari are Slain).
+          score: 0.418
+        - ref: Kojiki, Section 10
+          book: Section 10, The Purification of the August Person.
+          score: 0.416
+        - ref: Kojiki, Section 88 (2)
+          book: Section 88, Emperor Kei-kō (Part XIII.—Yamato-take Meets the Deity of Mount Ibuki).
+          score: 0.414
+        - ref: Kojiki, Section 32 (7)
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.414
+        - ref: Kojiki, Section 97 (2)
+          book: Section 97, Emperor Chiū-ai (Part III.—Preparations for the Conquest of Korea).
+          score: 0.399
+        - ref: Kojiki, Section 132 (3)
+          book: Section 132, Emperor Ri-chiū (Part II.—He is Taken to Iso-no-Kami).
+          score: 0.395
+        - ref: Kojiki, Section 73
+          book: Section 73, Emperor Sui-nin (Part V.—His Later Wives).
+          score: 0.395
+        - ref: Kojiki, Section 105 (2)
+          book: Section 105, Emperor Ō-jin (Part II.—He Divides the Inheritance Between His Three Sons).
+          score: 0.392
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: Maintaining absolute integrity and balance in one's dealings with others.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Kojiki, Section 88 (2)
+          book: Section 88, Emperor Kei-kō (Part XIII.—Yamato-take Meets the Deity of Mount Ibuki).
+          score: 0.371
+        - ref: Kojiki, Section 37 (3)
+          book: Section 37, The Curse of the Deity Great-Mountain-Possessor.
+          score: 0.365
+        - ref: Kojiki, Section 32 (7)
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.362
+        - ref: Kojiki, Section 33 (3)
+          book: Section 33, The August Descent from Heaven of his Augustness the August Grandchild.
+          score: 0.345
+        - ref: Kojiki, Section 30
+          book: Section 30, The August Deliberation for Pacifying the Land.
+          score: 0.342
+        - ref: Kojiki, Section 21 (4)
+          book: Section 21, The White Hare of Inaba.
+          score: 0.341
+        - ref: Kojiki, Section 124 (5)
+          book: Section 124, Emperor Nin-toku (Part VI.—He Follows the Empress Into Yamashiro).
+          score: 0.34
+        - ref: Kojiki, Section 12
+          book: Section 12, The Crying and Weeping of His Impetuous-Male-Augustness.
+          score: 0.337
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of maintaining the correct order of events to preserve the truth of history.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Kojiki, Section 4 (2)
+          book: Section 4, Courtship of the Deities the Male-Who-Invites and the Female-Who-Invites.
+          score: 0.324
+        - ref: Kojiki, Section 4
+          book: Section 4, Courtship of the Deities the Male-Who-Invites and the Female-Who-Invites.
+          score: 0.298
+        - ref: Kojiki, Section 32
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.292
+        - ref: Kojiki, Section 30 (2)
+          book: Section 30, The August Deliberation for Pacifying the Land.
+          score: 0.289
+        - ref: Kojiki, Section 37 (3)
+          book: Section 37, The Curse of the Deity Great-Mountain-Possessor.
+          score: 0.284
+        - ref: Kojiki, Section 33
+          book: Section 33, The August Descent from Heaven of his Augustness the August Grandchild.
+          score: 0.283
+        - ref: Kojiki, Section 79
+          book: Section 79, Emperor Kei-kō (Part IV.—Yamato-take Slays His Elder Brother).
+          score: 0.282
+        - ref: Kojiki, Section 91
+          book: Section 91, Emperor Kei-kō (Part XVI.—Yamato-take’s Butler).
+          score: 0.276
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The moral obligation to ensure others are not excluded or harmed by one's actions.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Kojiki, Section 32
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.408
+        - ref: Kojiki, Section 10
+          book: Section 10, The Purification of the August Person.
+          score: 0.398
+        - ref: Kojiki, Section 32 (7)
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.396
+        - ref: Kojiki, Section 30 (2)
+          book: Section 30, The August Deliberation for Pacifying the Land.
+          score: 0.364
+        - ref: Kojiki, Section 10 (3)
+          book: Section 10, The Purification of the August Person.
+          score: 0.364
+        - ref: Kojiki, Section 32 (2)
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.361
+        - ref: Kojiki, Section 31 (3)
+          book: Section 31, The Heavenly-Young-Prince.
+          score: 0.358
+        - ref: Kojiki, Section 13 (3)
+          book: Section 13, The August Oath.
+          score: 0.354
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity and truth by refusing to ignore flaws.
+        ref: Kojiki, Section 10
+        quote: '​ Therefore the Great Deity the Male-Who-Invites said: “Nay! hideous! I have come to a
+          hideous and polluted land,—I have! So I will perform the purification of my august person.”
+          So he went out to a plain [covered with] ahagi at a small river-mouth near Tachibana in Himuka
+          in [the island of] Tsukushi, and purified and cleansed himself. So the name of the Deity that
+          was born from the august staff which he threw down was the Deity Thrust-Erect-Come-Not-Place.
+          The name of the Deity that was born from the august ​girdle which he next threw down was the
+          Deity Road-Long-Space. The name of Deity that was born from the august skirt which he next threw
+          down was the Deity Loosen-Put.'
+        read_further: Section 10, The Purification of the August Person.
+        relation: affirms
+        how: The deity recognizes the land as 'hideous and polluted' and chooses to perform a purification
+          rather than ignore the state of the environment. This mirrors the developer's refusal to ignore
+          a failing test, treating the flaw as a corruption that must be cleansed to restore integrity.
+        status: proposed
+        near:
+        - ref: Kojiki, Section 10
+          book: Section 10, The Purification of the August Person.
+          score: 0.428
+        - ref: Kojiki, Section 88 (2)
+          book: Section 88, Emperor Kei-kō (Part XIII.—Yamato-take Meets the Deity of Mount Ibuki).
+          score: 0.418
+        - ref: Kojiki, Section 133 (5)
+          book: Section 133, Emperor Ri-chiū (Part III.—His Rebellious Brother and the Latter’s Retainer
+            Sobakari are Slain).
+          score: 0.41
+        - ref: Kojiki, Section 32 (7)
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.402
+        - ref: Kojiki, Section 132 (3)
+          book: Section 132, Emperor Ri-chiū (Part II.—He is Taken to Iso-no-Kami).
+          score: 0.394
+        - ref: Kojiki, Section 21 (4)
+          book: Section 21, The White Hare of Inaba.
+          score: 0.394
+        - ref: Kojiki, Section 33 (3)
+          book: Section 33, The August Descent from Heaven of his Augustness the August Grandchild.
+          score: 0.393
+        - ref: Kojiki, Section 32
+          book: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+          score: 0.37
+    reading:
+    - read: Section 10, The Purification of the August Person.
+      score: 1.91
+      why: It describes a deity performing a ritual purification of a polluted land and the subsequent
+        birth of new deities from his discarded items, suggesting to a project worker that a failed rule
+        test represents a fundamental breach of integrity that requires active purification rather than
+        being ignored as a flake.
+      passages: 1
+    - read: Section 32, Abdication of the Deity Master-of-the-Great-Land.
+      score: 1.07
+      why: It describes a divine consultation regarding the selection of a successor for a mission, and
+        a reader might take from it the importance of evaluating specific qualifications, lineage, and
+        past achievements when choosing a leader.
+      passages: 0
+    - read: Section 105, Emperor Ō-jin (Part II.—He Divides the Inheritance Between His Three Sons).
+      score: 1.05
+      why: It describes a divine deliberation regarding the value of elder versus younger children to
+        determine succession, which a project worker might interpret as a guideline for establishing hierarchical
+        order and correct administrative instructions.
+      passages: 1
+    - read: Section 88, Emperor Kei-kō (Part XIII.—Yamato-take Meets the Deity of Mount Ibuki).
+      score: 0.72
+      why: It describes a hero's encounter with a supernatural white boar and a subsequent divine trial
+        of ice-rain, suggesting that a developer might be looking for themes of spiritual confrontation,
+        the recognition of divine messengers, or the experience of sudden, overwhelming environmental
+        obstacles.
+      passages: 0
+    - read: Section 133, Emperor Ri-chiū (Part III.—His Rebellious Brother and the Latter’s Retainer Sobakari
+        are Slain).
+      score: 0.55
+      why: It describes a divine command for a brother to execute a king to resolve a conflict of intent,
+        suggesting a project focus on themes of loyalty, the elimination of rivals, or the execution of
+        authoritative mandates.
+      passages: 0
+    reflection: The project prioritizes the integrity of its core functions as a moral obligation to the
+      user. It views technical errors not as inconveniences to be bypassed, but as fundamental corruptions
+      that must be purified to maintain the system's honor. It seeks to transform professional duty into
+      a practice of spiritual discipline.
+  tao-te-ching:
+    title: The Tao Te Ching
+    tradition: Taoist
+    translation: James Legge, 1891
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: The integrity of fulfilling a promise to another person.
+        ref: Tao Te Ching 7
+        quote: 1. Heaven is long-enduring and earth continues long. The reason why heaven and earth are
+          able to endure and continue thus long is because they do not live of, or for, themselves. This
+          is how they are able to continue and endure. 2. Therefore the sage puts his own person last,
+          and yet it is found in the foremost place; he treats his person as if it were foreign to him,
+          and yet that person is preserved. Is it not because he has no personal and private ends, that
+          therefore such ends are realised?
+        read_further: Chapter 7
+        relation: affirms
+        how: This passage suggests that by putting one's own personal interests aside to serve others,
+          one's own ends are actually realized. It aligns with the idea that fulfilling a promise to a
+          customer is a way of acting without 'private ends' to achieve a greater integrity.
+        status: proposed
+        near:
+        - ref: Tao Te Ching 77, passage 1
+          book: Chapter 77
+          score: 0.565
+        - ref: Tao Te Ching 81
+          book: Chapter 81
+          score: 0.564
+        - ref: Tao Te Ching 56
+          book: Chapter 56
+          score: 0.536
+        - ref: Tao Te Ching 23, passage 1
+          book: Chapter 23
+          score: 0.531
+        - ref: Tao Te Ching 25, passage 2
+          book: Chapter 25
+          score: 0.525
+        - ref: Tao Te Ching 7
+          book: Chapter 7
+          score: 0.523
+        - ref: Tao Te Ching 5
+          book: Chapter 5
+          score: 0.513
+        - ref: Tao Te Ching 38, passage 2
+          book: Chapter 38
+          score: 0.506
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The pursuit of absolute integrity and the preservation of balance in human dealings.
+        ref: Tao Te Ching 25, passage 2
+        quote: 3. Great, it passes on (in constant flow). Passing on, it becomes remote. Having become
+          remote, it returns. Therefore the Tao is great; Heaven is great; Earth is great; and the (sage)
+          king is also great. In the universe there are four that are great, and the (sage) king is one
+          of them. 4. Man takes his law from the Earth; the Earth takes its law from Heaven; Heaven takes
+          its law from the Tao. The law of the Tao is its being what it is.
+        read_further: Chapter 25
+        relation: affirms
+        how: The passage suggests that the ultimate law is 'being what it is,' which aligns with the developer's
+          pursuit of absolute integrity and the objective truth of a balanced account. It frames the rule
+          not just as a technicality, but as an adherence to the inherent nature of reality.
+        status: proposed
+        near:
+        - ref: Tao Te Ching 77, passage 1
+          book: Chapter 77
+          score: 0.557
+        - ref: Tao Te Ching 55, passage 2
+          book: Chapter 55
+          score: 0.547
+        - ref: Tao Te Ching 18
+          book: Chapter 18
+          score: 0.546
+        - ref: Tao Te Ching 38, passage 3
+          book: Chapter 38
+          score: 0.543
+        - ref: Tao Te Ching 42, passage 1
+          book: Chapter 42
+          score: 0.536
+        - ref: Tao Te Ching 46
+          book: Chapter 46
+          score: 0.527
+        - ref: Tao Te Ching 40
+          book: Chapter 40
+          score: 0.525
+        - ref: Tao Te Ching 25, passage 2
+          book: Chapter 25
+          score: 0.523
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of maintaining integrity and truth in the flow of time and actions.
+        ref: Tao Te Ching 32, passage 2
+        quote: 4. As soon as it proceeds to action, it has a name. When it once has that name, (men) can
+          know to rest in it. When they know to rest in it, they can be free from all risk of failure
+          and error. 5. The relation of the Tao to all the world is like that of the great rivers and
+          seas to the streams from the valleys.
+        read_further: Chapter 32
+        relation: affirms
+        how: The passage describes the Tao as the source of the rivers and seas, mirroring the idea of
+          a single, authoritative source of truth (shop.clock.now()) for all smaller streams of data.
+          It suggests that by resting in a foundational, unified source, one can be free from the risk
+          of error.
+        status: proposed
+        near:
+        - ref: Tao Te Ching 55, passage 2
+          book: Chapter 55
+          score: 0.509
+        - ref: Tao Te Ching 25, passage 2
+          book: Chapter 25
+          score: 0.496
+        - ref: Tao Te Ching 30, passage 2
+          book: Chapter 30
+          score: 0.487
+        - ref: Tao Te Ching 15, passage 3
+          book: Chapter 15
+          score: 0.485
+        - ref: Tao Te Ching 32, passage 2
+          book: Chapter 32
+          score: 0.483
+        - ref: Tao Te Ching 77, passage 1
+          book: Chapter 77
+          score: 0.482
+        - ref: Tao Te Ching 38, passage 3
+          book: Chapter 38
+          score: 0.475
+        - ref: Tao Te Ching 81
+          book: Chapter 81
+          score: 0.475
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The responsibility to ensure that others are not excluded or harmed by one's actions.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Tao Te Ching 63, passage 1
+          book: Chapter 63
+          score: 0.499
+        - ref: Tao Te Ching 23, passage 2
+          book: Chapter 23
+          score: 0.48
+        - ref: Tao Te Ching 43
+          book: Chapter 43
+          score: 0.479
+        - ref: Tao Te Ching 56
+          book: Chapter 56
+          score: 0.467
+        - ref: Tao Te Ching 3, passage 2
+          book: Chapter 3
+          score: 0.455
+        - ref: Tao Te Ching 24
+          book: Chapter 24
+          score: 0.453
+        - ref: Tao Te Ching 32, passage 2
+          book: Chapter 32
+          score: 0.453
+        - ref: Tao Te Ching 64, passage 3
+          book: Chapter 64
+          score: 0.453
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity by refusing to ignore small flaws in one's work.
+        ref: Tao Te Ching 73, passage 2
+        quote: 2. It is the way of Heaven not to strive, and yet it skilfully overcomes; not to speak,
+          and yet it is skilful in obtaining a reply; does not call, and yet men come to it of themselves.
+          Its demonstrations are quiet, and yet its plans are skilful and effective. The meshes of the
+          net of Heaven are large; far apart, but letting nothing escape.
+        read_further: Chapter 73
+        relation: affirms
+        how: The imagery of the net of Heaven being 'far apart, but letting nothing escape' mirrors the
+          idea of a test suite where every individual point of failure matters. It suggests that a system's
+          integrity relies on a structure that allows for space but refuses to let any single flaw slip
+          through.
+        status: proposed
+        near:
+        - ref: Tao Te Ching 47
+          book: Chapter 47
+          score: 0.529
+        - ref: Tao Te Ching 73, passage 2
+          book: Chapter 73
+          score: 0.522
+        - ref: Tao Te Ching 81
+          book: Chapter 81
+          score: 0.519
+        - ref: Tao Te Ching 56
+          book: Chapter 56
+          score: 0.516
+        - ref: Tao Te Ching 24
+          book: Chapter 24
+          score: 0.515
+        - ref: Tao Te Ching 48
+          book: Chapter 48
+          score: 0.509
+        - ref: Tao Te Ching 77, passage 1
+          book: Chapter 77
+          score: 0.506
+        - ref: Tao Te Ching 27, passage 1
+          book: Chapter 27
+          score: 0.5
+    reading:
+    - read: Chapter 25
+      score: 1.42
+      why: It describes a primordial, unchanging source that flows and returns, suggesting to the reader
+        that the project involves reconciling fundamental, systemic flows where minor discrepancies reveal
+        a need to understand the underlying whole.
+      passages: 1
+    - read: Chapter 77
+      score: 1.27
+      why: It describes the Tao as a principle of balancing extremes by diminishing superabundance and
+        supplementing deficiency, suggesting that a practitioner should seek to distribute their own surplus
+        to serve others rather than accumulating it for themselves.
+      passages: 0
+    - read: Chapter 73
+      score: 1.26
+      why: It describes the principle of effortless mastery and non-striving, suggesting that a developer
+        should focus on the integrity of the system's underlying rules rather than superficial workarounds.
+      passages: 1
+    - read: Chapter 32
+      score: 1.16
+      why: It describes the transition from an unnamed, primordial source of power to a named, actionable
+        principle, suggesting that the project's issues stem from a failure to align underlying systems
+        with their natural, self-regulating order.
+      passages: 1
+    - read: Chapter 7
+      score: 1.09
+      why: It describes the principle of selflessness and the prioritization of collective purpose over
+        personal interest, suggesting that a worker should focus on accurate service and duty to others
+        to ensure the preservation of the whole.
+      passages: 1
+    reflection: The project prioritizes the pursuit of absolute integrity and objective truth within its
+      technical systems. It views accurate data and reliable code not as mere requirements, but as a way
+      to align the software with the inherent nature of reality. It seeks to create a seamless, honest
+      flow of service where every small detail contributes to a larger state of balance.
+  analects:
+    title: The Analects
+    tradition: Confucian
+    translation: James Legge, 1861
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: The moral obligation to be honest and reliable in one's dealings with others.
+        ref: Analects XV.V
+        quote: 1. Tsze-chang asked how a man should conduct himself, so as to be everywhere appreciated.
+          2. The Master said, 'Let his words be sincere and truthful, and his actions honourable and careful;--
+          such conduct may be practised among the rude tribes of the South or the North. If his words
+          be not sincere and truthful and his actions not honourable and careful, will he, with such conduct,
+          be appreciated, even in his neighborhood? 3. 'When he is standing, let him see those two things,
+          as it were, fronting him. When he is in a carriage, let him see them attached to the yoke. Then
+          may he subsequently carry them into practice.' 4. Tsze-chang wrote these counsels on the end
+          of his sash.
+        read_further: Book XV
+        relation: affirms
+        how: This passage directly links sincerity and truthfulness in speech with honorable and careful
+          actions as the foundation for being a person of integrity. It mirrors the developer's goal of
+          ensuring that the software's actions (charging correctly) match the honesty of its words (the
+          shop's promises).
+        status: proposed
+        near:
+        - ref: Analects I.XIII
+          book: Book I
+          score: 0.521
+        - ref: Analects VIII.II
+          book: Book VIII
+          score: 0.497
+        - ref: Analects XIII.XVIII
+          book: Book XIII
+          score: 0.469
+        - ref: Analects XIII.III
+          book: Book XIII
+          score: 0.468
+        - ref: Analects I.III
+          book: Book I
+          score: 0.464
+        - ref: Analects VI.XVI
+          book: Book VI
+          score: 0.464
+        - ref: Analects XIII.III (2)
+          book: Book XIII
+          score: 0.46
+        - ref: Analects XV.V
+          book: Book XV
+          score: 0.46
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The moral necessity of absolute integrity and precision in one's dealings with others.
+        ref: Analects XIII.III
+        quote: 1. Tsze-lu said, 'The ruler of Wei has been waiting for you, in order with you to administer
+          the government. What will you consider the first thing to be done?' 2. The Master replied, 'What
+          is necessary is to rectify names.' 3. 'So, indeed!' said Tsze-lu. 'You are wide of the mark!
+          Why must there be such rectification?' 4. The Master said, 'How uncultivated you are, Yu! A
+          superior man, in regard to what he does not know, shows a cautious reserve. 5. 'If names be
+          not correct, language is not in accordance with the truth of things. If language be not in accordance
+          with the truth of things, affairs cannot be carried on to success. 6.
+        read_further: Book XIII
+        relation: affirms
+        how: The passage emphasizes that if names (or definitions) are not correct, language fails to
+          align with the truth of things, and affairs cannot succeed. In this context, using a 'float'
+          instead of a 'decimal' is a failure to rectify the name of the value, leading to a failure in
+          the integrity of the transaction.
+        status: proposed
+        near:
+        - ref: Analects XV.XVII
+          book: Book XV
+          score: 0.538
+        - ref: Analects XIII.III (2)
+          book: Book XIII
+          score: 0.529
+        - ref: Analects VIII.II
+          book: Book VIII
+          score: 0.529
+        - ref: Analects VI.XVI
+          book: Book VI
+          score: 0.529
+        - ref: Analects I.XIII
+          book: Book I
+          score: 0.518
+        - ref: Analects XX.II (4)
+          book: Book XX
+          score: 0.511
+        - ref: Analects XIII.III
+          book: Book XIII
+          score: 0.504
+        - ref: Analects XI.XX
+          book: Book XI
+          score: 0.498
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of maintaining accuracy and integrity in one's records and actions.
+        ref: Analects XIII.III
+        quote: 1. Tsze-lu said, 'The ruler of Wei has been waiting for you, in order with you to administer
+          the government. What will you consider the first thing to be done?' 2. The Master replied, 'What
+          is necessary is to rectify names.' 3. 'So, indeed!' said Tsze-lu. 'You are wide of the mark!
+          Why must there be such rectification?' 4. The Master said, 'How uncultivated you are, Yu! A
+          superior man, in regard to what he does not know, shows a cautious reserve. 5. 'If names be
+          not correct, language is not in accordance with the truth of things. If language be not in accordance
+          with the truth of things, affairs cannot be carried on to success. 6.
+        read_further: Book XIII
+        relation: affirms
+        how: The passage emphasizes that if names (or data labels) are not correct, language fails to
+          align with the truth of things, and affairs cannot succeed. In software, a timestamp that misrepresents
+          the 'truth' of when an event occurred prevents the system from functioning correctly.
+        status: proposed
+        near:
+        - ref: Analects XIII.III
+          book: Book XIII
+          score: 0.558
+        - ref: Analects XIII.III (2)
+          book: Book XIII
+          score: 0.498
+        - ref: Analects XIII.XIII
+          book: Book XIII
+          score: 0.471
+        - ref: Analects I.XIII
+          book: Book I
+          score: 0.468
+        - ref: Analects VI.XVI
+          book: Book VI
+          score: 0.467
+        - ref: Analects XV.V
+          book: Book XV
+          score: 0.465
+        - ref: Analects XX.II (4)
+          book: Book XX
+          score: 0.449
+        - ref: Analects VII.XXX
+          book: Book VII
+          score: 0.448
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The moral obligation to be considerate and inclusive of others' needs.
+        ref: Analects XII.II
+        quote: Chung-kung asked about perfect virtue. The Master said, 'It is, when you go abroad, to
+          behave to every one as if you were receiving a great guest; to employ the people as if you were
+          assisting at a great sacrifice; not to do to others as you would not wish done to yourself;
+          to have no murmuring against you in the country, and none in the family.' Chung-kung said, 'Though
+          I am deficient in intelligence and vigour, I will make it my business to practise this lesson.'
+        read_further: Book XII
+        relation: affirms
+        how: The passage describes perfect virtue as treating everyone as if they were a great guest and
+          not doing to others what you would not wish done to yourself. This aligns with the moral obligation
+          to ensure that non-English speakers are not excluded or inconvenienced by the software's design.
+        status: proposed
+        near:
+        - ref: Analects I.II
+          book: Book I
+          score: 0.484
+        - ref: Analects XIV.XXXVI
+          book: Book XIV
+          score: 0.483
+        - ref: Analects VIII.II
+          book: Book VIII
+          score: 0.478
+        - ref: Analects XVII.VIII
+          book: Book XVII
+          score: 0.441
+        - ref: Analects XII.II
+          book: Book XII
+          score: 0.438
+        - ref: Analects I.XII
+          book: Book I
+          score: 0.435
+        - ref: Analects XVII.VI
+          book: Book XVII
+          score: 0.433
+        - ref: Analects I.XIII
+          book: Book I
+          score: 0.433
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity and consistency in one's actions and commitments.
+        ref: Analects XIII.III (2)
+        quote: '''When affairs cannot be carried on to success, proprieties and music will not flourish.
+          When proprieties and music do not flourish, punishments will not be properly awarded. When punishments
+          are not properly awarded, the people do not know how to move hand or foot. 7. ''Therefore a
+          superior man considers it necessary that the names he uses may be spoken appropriately, and
+          also that what he speaks may be carried out appropriately. What the superior man requires, is
+          just that in his words there may be nothing incorrect.'''
+        read_further: Book XIII
+        relation: affirms
+        how: This passage emphasizes that for affairs to succeed, what a person speaks must be carried
+          out appropriately. It directly supports the idea that a failed test is a failure of the 'name'
+          or commitment to the rule, rather than a minor technicality.
+        status: proposed
+        near:
+        - ref: Analects XIII.III
+          book: Book XIII
+          score: 0.477
+        - ref: Analects IX.XXIV
+          book: Book IX
+          score: 0.469
+        - ref: Analects XIII.XIII
+          book: Book XIII
+          score: 0.468
+        - ref: Analects VI.XVI
+          book: Book VI
+          score: 0.467
+        - ref: Analects I.XIII
+          book: Book I
+          score: 0.467
+        - ref: Analects VIII.II
+          book: Book VIII
+          score: 0.466
+        - ref: Analects XIII.III (2)
+          book: Book XIII
+          score: 0.465
+        - ref: Analects XIII.XXII
+          book: Book XIII
+          score: 0.462
+    reading:
+    - read: Book XIII
+      score: 5.4
+      why: It describes the principles of leadership through personal example, diligence, and the proper
+        management of people and systems, suggesting that a worker should prioritize integrity, persistence,
+        and the rigorous maintenance of standards over shortcuts or negligence.
+      passages: 3
+    - read: Book XV
+      score: 1.67
+      why: It describes the endurance of a superior man in the face of hardship and the necessity of maintaining
+        discipline and correct procedure, suggesting that a worker should remain composed and diligent
+        even when facing difficulties or demanding tasks.
+      passages: 1
+    - read: Book I
+      score: 1.54
+      why: This text emphasizes the value of persistent learning, the importance of integrity regardless
+        of recognition, and the necessity of focusing on fundamental principles to maintain social and
+        personal order.
+      passages: 0
+    - read: Book XII
+      score: 1.09
+      why: It describes the practice of perfect virtue through the constant internal and external adherence
+        to propriety, suggesting to a developer that the solution to technical errors like KeyErrors lies
+        in rigorous attention to established standards and the elimination of deviations from correct
+        procedure.
+      passages: 1
+    - read: Book VIII
+      score: 0.66
+      why: This text describes the necessity of aligning personal virtues and actions with established
+        rules of propriety to ensure they are effective and socially harmonious, suggesting that a reader
+        should seek to balance individual initiative with structural standards.
+      passages: 0
+    reflection: The project prioritizes the alignment of technical precision with moral integrity, treating
+      software accuracy as a form of honesty. It views errors in data types, timestamps, and localization
+      as failures of character that prevent the system from reflecting the truth of the human interactions
+      it serves. The goal is to ensure that the software's behavior is as reliable and inclusive as the
+      promises made by the shop.
+  meditations:
+    title: Meditations of Marcus Aurelius
+    tradition: Stoic
+    translation: Jeremy Collier, 1701, revised Zimmern
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: Fulfilling one's duty with integrity and precision for the sake of the common good.
+        ref: Meditations, Eighth Book, II
+        quote: Upon every action that thou art about, put this question to thyself; How will this when
+          it is done agree with me? Shall I have no occasion to repent of it? Yet a very little while
+          and I am dead and gone; and all things are at end. What then do I care for more than this, that
+          my present action whatsoever it be, may be the proper action of one that is reasonable; whose
+          end is, the common good; who in all things is ruled and governed by the same law of right and
+          reason, by which God Himself is.
+        read_further: The Eighth Book
+        relation: affirms
+        how: This passage directly links the quality of one's present actions to the pursuit of the common
+          good and the exercise of reason. It encourages the developer to ensure that even a small task,
+          like processing an order, is done with the integrity of a reasonable person.
+        status: proposed
+        near:
+        - ref: Meditations, Eighth Book, II
+          book: The Eighth Book
+          score: 0.513
+        - ref: Meditations, Fourth Book, XV
+          book: The Fourth Book
+          score: 0.51
+        - ref: Meditations, Eighth Book, XI
+          book: The Eighth Book
+          score: 0.507
+        - ref: Meditations, Eleventh Book, XII (2)
+          book: The Eleventh Book
+          score: 0.497
+        - ref: Meditations, Twelfth Book, I
+          book: The Twelfth Book
+          score: 0.49
+        - ref: Meditations, Third Book, XIII
+          book: The Third Book
+          score: 0.484
+        - ref: Meditations, Sixth Book, XXVII
+          book: The Sixth Book
+          score: 0.479
+        - ref: Meditations, Eleventh Book, XVIII (3)
+          book: The Eleventh Book
+          score: 0.475
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The pursuit of integrity and the preservation of truth in small details.
+        ref: Meditations, Fourth Book, VIII
+        quote: Whatsoever doth happen in the world, doth happen justly, and so if thou dost well take
+          heed, thou shalt find it. I say not only in right order by a series of inevitable consequences,
+          but according to justice and as it were by way of equal distribution, according to the true
+          worth of everything. Continue then to take notice of it, as thou hast begun, and whatsoever
+          thou dost, do it not without this proviso, that it be a thing of that nature that a good man
+          (as the word good is properly taken) may do it. This observe carefully in every action.
+        read_further: The Fourth Book
+        relation: affirms
+        how: This passage speaks to the 'equal distribution' and 'true worth' of things, mirroring the
+          developer's desire for mathematical precision where every cent must be accounted for justly.
+        status: proposed
+        near:
+        - ref: Meditations, Ninth Book, I
+          book: The Ninth Book
+          score: 0.512
+        - ref: Meditations, Twelfth Book, XXII
+          book: The Twelfth Book
+          score: 0.493
+        - ref: Meditations, Fourth Book, VIII
+          book: The Fourth Book
+          score: 0.489
+        - ref: Meditations, Twelfth Book, XVIII
+          book: The Twelfth Book
+          score: 0.488
+        - ref: Meditations, Third Book, XIII
+          book: The Third Book
+          score: 0.48
+        - ref: Meditations, Seventh Book, VI
+          book: The Seventh Book
+          score: 0.479
+        - ref: Meditations, Fourth Book, XVIII
+          book: The Fourth Book
+          score: 0.479
+        - ref: Meditations, Eleventh Book, I (3)
+          book: The Eleventh Book
+          score: 0.478
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of maintaining objective truth and accuracy in our shared reality.
+        ref: Meditations, Seventh Book, VI
+        quote: 'Let not things future trouble thee. For if necessity so require that they come to pass,
+          thou shalt (whensoever that is) be provided for them with the same reason, by which whatsoever
+          is now present, is made both tolerable and acceptable unto thee. All things are linked and knitted
+          together, and the knot is sacred, neither is there anything in the world, that is not kind and
+          natural in regard of any other thing, or, that hath not some kind of reference and natural correspondence
+          with whatsoever is in the world besides. For all things are ranked together, and by that decency
+          of its due place and order that each particular doth observe, they all concur together to the
+          making of one and the same κόσμος or world: as if you said, a comely piece, or an orderly composition.'
+        read_further: The Seventh Book
+        relation: affirms
+        how: The passage describes the world as an 'orderly composition' where every particular thing
+          observes its 'due place and order' to create a coherent whole. This mirrors the developer's
+          concern that accurate timestamps are necessary to maintain the proper order and 'natural correspondence'
+          of the data within the system.
+        status: proposed
+        near:
+        - ref: Meditations, Ninth Book, I
+          book: The Ninth Book
+          score: 0.521
+        - ref: Meditations, Second Book, VI
+          book: The Second Book
+          score: 0.486
+        - ref: Meditations, Seventh Book, VI
+          book: The Seventh Book
+          score: 0.48
+        - ref: Meditations, Tenth Book, VIII (5)
+          book: The Tenth Book
+          score: 0.478
+        - ref: Meditations, Seventh Book, XXX
+          book: The Seventh Book
+          score: 0.475
+        - ref: Meditations, Eighth Book, LII
+          book: The Eighth Book
+          score: 0.474
+        - ref: Meditations, Twelfth Book, XXII
+          book: The Twelfth Book
+          score: 0.471
+        - ref: Meditations, Eleventh Book, XII (2)
+          book: The Eleventh Book
+          score: 0.469
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The duty to be considerate and inclusive toward the needs of others.
+        ref: Meditations, Ninth Book, XXI
+        quote: As thou thyself, whoever thou art, were made for the perfection and consummation, being
+          a member of it, of a common society; so must every action of thine tend to the perfection and
+          consummation of a life that is truly sociable. What action soever of thine therefore that either
+          immediately or afar off, hath not reference to the common good, that is an exorbitant and disorderly
+          action; yea it is seditious; as one among the people who from such and such a consent and unity,
+          should factiously divide and separate himself.
+        read_further: The Ninth Book
+        relation: affirms
+        how: This passage emphasizes that every action should tend toward the perfection of a common society
+          and the common good. It suggests that failing to consider the needs of others is a disorderly
+          action that separates the individual from the unity of the group.
+        status: proposed
+        near:
+        - ref: Meditations, Eighth Book, XI
+          book: The Eighth Book
+          score: 0.542
+        - ref: Meditations, Sixth Book, VI
+          book: The Sixth Book
+          score: 0.53
+        - ref: Meditations, Ninth Book, XIV
+          book: The Ninth Book
+          score: 0.513
+        - ref: Meditations, Second Book, XI (2)
+          book: The Second Book
+          score: 0.509
+        - ref: Meditations, Ninth Book, XXI
+          book: The Ninth Book
+          score: 0.507
+        - ref: Meditations, Sixth Book, II
+          book: The Sixth Book
+          score: 0.495
+        - ref: Meditations, Eleventh Book, XII (2)
+          book: The Eleventh Book
+          score: 0.492
+        - ref: Meditations, Sixth Book, XIII (2)
+          book: The Sixth Book
+          score: 0.492
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity by refusing to ignore small flaws in one's character or work.
+        ref: Meditations, Sixth Book, III
+        quote: Look in, let not either the proper quality, or the true worth of anything pass thee, before
+          thou hast fully apprehended it.
+        read_further: The Sixth Book
+        relation: affirms
+        how: This passage emphasizes the necessity of looking past surface appearances to grasp the true
+          quality of a thing. In this context, it supports the idea that a failing test is not a superficial
+          nuisance to be ignored, but a fundamental truth about the integrity of the work that must be
+          fully apprehended.
+        status: proposed
+        near:
+        - ref: Meditations, Sixth Book, XI (2)
+          book: The Sixth Book
+          score: 0.54
+        - ref: Meditations, Ninth Book, I (2)
+          book: The Ninth Book
+          score: 0.535
+        - ref: Meditations, Seventh Book, XXXIV
+          book: The Seventh Book
+          score: 0.534
+        - ref: Meditations, Twelfth Book, XX (2)
+          book: The Twelfth Book
+          score: 0.53
+        - ref: Meditations, Third Book, VII (4)
+          book: The Third Book
+          score: 0.523
+        - ref: Meditations, Seventh Book, XXIX
+          book: The Seventh Book
+          score: 0.516
+        - ref: Meditations, Sixth Book, III
+          book: The Sixth Book
+          score: 0.516
+        - ref: Meditations, Fifth Book, XXII
+          book: The Fifth Book
+          score: 0.516
+    reading:
+    - read: The Ninth Book
+      score: 2.57
+      why: It describes the universe as a collective system where all reasonable creatures are meant to
+        do one another good, suggesting that a developer should view their work as a contribution to a
+        common whole where causing harm or error is a violation of the natural order.
+      passages: 1
+    - read: The Eighth Book
+      score: 2.3
+      why: It describes the impossibility of achieving the perfection of a philosopher due to past inconsistencies,
+        suggesting that a worker should remain humble and grounded in their practical duties rather than
+        seeking vainglory.
+      passages: 1
+    - read: The Sixth Book
+      score: 2.09
+      why: It describes a universe governed by an inherently good and rational essence, suggesting that
+        a developer should focus on fulfilling their duty with integrity regardless of external circumstances
+        or the nature of the failures encountered.
+      passages: 1
+    - read: The Seventh Book
+      score: 1.6
+      why: It describes the repetitive and predictable nature of human folly and worldly events, suggesting
+        that a developer should view technical errors as common, recurring patterns rather than unique
+        crises.
+      passages: 1
+    - read: The Fourth Book
+      score: 1.49
+      why: It describes the human mind's ability to remain adaptable and redirect its focus toward what
+        is achievable when circumstances change, suggesting that a worker should maintain composure and
+        practical flexibility when faced with unexpected errors or discrepancies.
+      passages: 1
+    reflection: The project prioritizes the integrity of small details as a means of maintaining a coherent
+      and just system. It views technical precision and the consideration of others not as mere requirements,
+      but as fundamental duties to the common good. The work seeks to align the internal logic of the
+      code with a sense of objective truth and order.
+  bible-kjv:
+    title: The Holy Bible
+    tradition: Christian
+    translation: King James Version, 1611
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: Maintaining integrity and honesty in all business dealings.
+        ref: Leviticus 19:35
+        quote: Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.
+        read_further: Leviticus 19
+        relation: affirms
+        how: This verse specifically addresses honesty in commerce by forbidding unrighteousness in weights
+          and measures. It directly aligns with the requirement to charge customers correctly and maintain
+          integrity in business dealings.
+        status: proposed
+        near:
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.621
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.587
+        - ref: Leviticus 19:11
+          book: Leviticus 19
+          score: 0.572
+        - ref: Leviticus 19:35
+          book: Leviticus 19
+          score: 0.569
+        - ref: Luke 16:10
+          book: Luke 16
+          score: 0.565
+        - ref: Proverbs 14:25
+          book: Proverbs 14
+          score: 0.556
+        - ref: Exodus 23:1
+          book: Exodus 23
+          score: 0.549
+        - ref: Proverbs 11:18
+          book: Proverbs 11
+          score: 0.546
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The moral obligation to be completely honest and accurate in all dealings with others.
+        ref: Leviticus 19:35
+        quote: Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.
+        read_further: Leviticus 19
+        relation: affirms
+        how: This verse specifically addresses the integrity of weights, measures, and commerce. It provides
+          a direct scriptural basis for the moral obligation to ensure exactness and honesty in financial
+          dealings.
+        status: proposed
+        near:
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.551
+        - ref: Proverbs 14:25
+          book: Proverbs 14
+          score: 0.538
+        - ref: Leviticus 19:35
+          book: Leviticus 19
+          score: 0.531
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.528
+        - ref: Leviticus 19:11
+          book: Leviticus 19
+          score: 0.524
+        - ref: Luke 16:10
+          book: Luke 16
+          score: 0.522
+        - ref: Ephesians 4:25
+          book: Ephesians 4
+          score: 0.518
+        - ref: Romans 12:17
+          book: Romans 12
+          score: 0.518
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: The importance of being honest and accurate in one's dealings with others.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.608
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.574
+        - ref: Proverbs 14:25
+          book: Proverbs 14
+          score: 0.55
+        - ref: 2 Corinthians 4:2
+          book: 2 Corinthians 4
+          score: 0.549
+        - ref: Proverbs 14:5
+          book: Proverbs 14
+          score: 0.532
+        - ref: Ephesians 4:25
+          book: Ephesians 4
+          score: 0.522
+        - ref: Proverbs 20:7
+          book: Proverbs 20
+          score: 0.519
+        - ref: Isaiah 26:7
+          book: Isaiah 26
+          score: 0.518
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: Showing love and consideration for the needs of others.
+        ref: Galatians 5:14
+        quote: For all the law is fulfilled in one word, even in this; Thou shalt love thy neighbour as
+          thyself.
+        read_further: Galatians 5
+        relation: affirms
+        how: This passage highlights that the core of the law is treating others with the same consideration
+          you would want for yourself. In this context, it suggests that providing translations is a practical
+          way to show that same love and consideration to colleagues.
+        status: proposed
+        near:
+        - ref: 1 Peter 3:8
+          book: 1 Peter 3
+          score: 0.522
+        - ref: Romans 13:10
+          book: Romans 13
+          score: 0.517
+        - ref: Proverbs 31:20
+          book: Proverbs 31
+          score: 0.507
+        - ref: Galatians 5:14
+          book: Galatians 5
+          score: 0.501
+        - ref: Mark 12:33
+          book: Mark 12
+          score: 0.501
+        - ref: Psalms 36:10
+          book: Psalms 36
+          score: 0.499
+        - ref: Psalms 63:3
+          book: Psalms 63
+          score: 0.495
+        - ref: Luke 10:27
+          book: Luke 10
+          score: 0.492
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity by refusing to ignore small failures or shortcuts.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: 2 Corinthians 4:2
+          book: 2 Corinthians 4
+          score: 0.591
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.518
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.517
+        - ref: Exodus 23:1
+          book: Exodus 23
+          score: 0.505
+        - ref: Malachi 2:6
+          book: Malachi 2
+          score: 0.504
+        - ref: Proverbs 14:5
+          book: Proverbs 14
+          score: 0.503
+        - ref: Psalms 25:21
+          book: Psalms 25
+          score: 0.495
+        - ref: 1 Timothy 5:22
+          book: 1 Timothy 5
+          score: 0.494
+    reading:
+    - read: Leviticus 19
+      score: 2.61
+      why: It describes the requirements for holiness and religious observance, which a worker might interpret
+        as a mandate for absolute precision, integrity, and exactness in financial accounting and communication.
+      passages: 2
+    - read: Proverbs 12
+      score: 2.04
+      why: It describes the contrast between the character of the righteous and the wicked, suggesting
+        that a worker should value instruction, integrity, and honest counsel over deceit and stubbornness.
+      passages: 0
+    - read: Galatians 5
+      score: 1.13
+      why: It describes the spiritual freedom found in faith over legalistic requirements, suggesting
+        that a developer might interpret this as a call to prioritize core functionality and spiritual
+        principles over rigid, exclusionary constraints or technical debt.
+      passages: 1
+    - read: Psalms 15
+      score: 0.88
+      why: It describes the moral and ethical character required to dwell in God's presence, suggesting
+        that a project worker should prioritize integrity, honesty, and the fair treatment of others.
+      passages: 0
+    - read: Proverbs 14
+      score: 0.74
+      why: It describes the contrast between wisdom and foolishness in behavior, speech, and integrity,
+        suggesting that a worker should prioritize diligence, honesty, and the pursuit of understanding
+        over pride and deceit.
+      passages: 0
+    reflection: The project prioritizes absolute integrity and precision in financial transactions as
+      a matter of moral responsibility. It also emphasizes the importance of inclusivity and mutual consideration
+      by ensuring that the tools provided are accessible to all members of the team.
+  tanakh-jps:
+    title: The Tanakh
+    tradition: Jewish
+    translation: Jewish Publication Society, 1917
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: Maintaining integrity and honesty in fair dealings with others.
+        ref: Leviticus 19:35
+        quote: Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.
+        read_further: Leviticus 19
+        relation: affirms
+        how: This verse directly addresses the integrity of commerce by forbidding unrighteousness in
+          weights and measures. It aligns with the software's goal of ensuring correct charges and honest
+          dealings.
+        status: proposed
+        near:
+        - ref: Leviticus 19:35
+          book: Leviticus 19
+          score: 0.645
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.622
+        - ref: Leviticus 19:11
+          book: Leviticus 19
+          score: 0.574
+        - ref: Proverbs 11:1
+          book: Proverbs 11
+          score: 0.574
+        - ref: Proverbs 16:11
+          book: Proverbs 16
+          score: 0.573
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.573
+        - ref: Deuteronomy 25:15
+          book: Deuteronomy 25
+          score: 0.564
+        - ref: Proverbs 11:18
+          book: Proverbs 11
+          score: 0.561
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The moral obligation to be precise and honest in all dealings with others.
+        ref: Leviticus 19:35
+        quote: Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.
+        read_further: Leviticus 19
+        relation: affirms
+        how: This verse explicitly commands honesty in 'weight' and 'measure,' directly addressing the
+          technical requirement for precision in financial calculations. It connects the software's technical
+          accuracy to the broader moral obligation of fair dealing.
+        status: proposed
+        near:
+        - ref: Leviticus 19:35
+          book: Leviticus 19
+          score: 0.571
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.55
+        - ref: Proverbs 16:11
+          book: Proverbs 16
+          score: 0.54
+        - ref: Deuteronomy 25:15
+          book: Deuteronomy 25
+          score: 0.538
+        - ref: Proverbs 11:1
+          book: Proverbs 11
+          score: 0.53
+        - ref: Ezekiel 18:8
+          book: Ezekiel 18
+          score: 0.514
+        - ref: Ezekiel 43:10
+          book: Ezekiel 43
+          score: 0.507
+        - ref: Zechariah 8:16
+          book: Zechariah 8
+          score: 0.507
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: Ensuring that actions are recorded and attributed to the correct time and place to maintain
+          integrity.
+        ref: Leviticus 19:35
+        quote: Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.
+        read_further: Leviticus 19
+        relation: affirms
+        how: This verse explicitly forbids dishonesty in standards of measurement and weight, which directly
+          parallels the need for accurate, standardized timekeeping in data integrity.
+        status: proposed
+        near:
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.534
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.513
+        - ref: Psalms 101:6
+          book: Psalms 101
+          score: 0.505
+        - ref: Proverbs 14:5
+          book: Proverbs 14
+          score: 0.5
+        - ref: Jeremiah 32:10
+          book: Jeremiah 32
+          score: 0.497
+        - ref: Psalms 101:2
+          book: Psalms 101
+          score: 0.492
+        - ref: Proverbs 10:9
+          book: Proverbs 10
+          score: 0.488
+        - ref: Leviticus 19:35
+          book: Leviticus 19
+          score: 0.486
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: The moral obligation to be inclusive and considerate of others' needs.
+        ref: Numbers 15:16
+        quote: One law and one ordinance shall be both for you, and for the stranger that sojourneth with
+          you.
+        read_further: Numbers 15
+        relation: affirms
+        how: This verse establishes the principle of universal inclusion, stating that the laws and protections
+          of the community must extend equally to the stranger. It mirrors the developer's goal of ensuring
+          the software is accessible and functional for all users, regardless of their native language.
+        status: proposed
+        near:
+        - ref: Deuteronomy 24:17
+          book: Deuteronomy 24
+          score: 0.496
+        - ref: Zechariah 7:10
+          book: Zechariah 7
+          score: 0.49
+        - ref: Deuteronomy 15:11
+          book: Deuteronomy 15
+          score: 0.488
+        - ref: Deuteronomy 24:14
+          book: Deuteronomy 24
+          score: 0.485
+        - ref: Numbers 15:16
+          book: Numbers 15
+          score: 0.481
+        - ref: Deuteronomy 15:7
+          book: Deuteronomy 15
+          score: 0.48
+        - ref: Proverbs 31:20
+          book: Proverbs 31
+          score: 0.48
+        - ref: Exodus 23:9
+          book: Exodus 23
+          score: 0.477
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity by refusing to ignore small flaws or shortcuts.
+        ref: Psalms 101:2
+        quote: I will give heed unto the way of integrity; oh when wilt Thou come unto me? I will walk
+          within my house in the integrity of my heart.
+        read_further: Psalms 101
+        relation: affirms
+        how: This passage emphasizes the internal commitment to integrity as a way of life, mirroring
+          the developer's commitment to internal consistency over convenience. It suggests that integrity
+          is not just an external action but a standard one holds for their own 'house' or workspace.
+        status: proposed
+        near:
+        - ref: Psalms 101:2
+          book: Psalms 101
+          score: 0.564
+        - ref: Psalms 101:6
+          book: Psalms 101
+          score: 0.559
+        - ref: Psalms 25:10
+          book: Psalms 25
+          score: 0.549
+        - ref: Proverbs 12:17
+          book: Proverbs 12
+          score: 0.531
+        - ref: Malachi 2:6
+          book: Malachi 2
+          score: 0.529
+        - ref: Proverbs 14:5
+          book: Proverbs 14
+          score: 0.522
+        - ref: Psalms 15:2
+          book: Psalms 15
+          score: 0.521
+        - ref: Psalms 78:10
+          book: Psalms 78
+          score: 0.514
+    reading:
+    - read: Leviticus 19
+      score: 4.47
+      why: It is about the requirement for holiness and precise observance of laws, which a worker might
+        interpret as a mandate for absolute accuracy and integrity in handling transactions and data.
+      passages: 3
+    - read: Psalms 101
+      score: 2.09
+      why: It describes a commitment to integrity and the rejection of crookedness, suggesting that a
+        developer should prioritize fixing broken rules over bypassing them.
+      passages: 1
+    - read: Proverbs 12
+      score: 1.25
+      why: It describes the moral contrast between the righteous and the wicked, suggesting that a person
+        working on this project should value correction, integrity, and upright thoughts over deceit and
+        wickedness.
+      passages: 0
+    - read: Numbers 15
+      score: 1.1
+      why: It describes the requirements for presenting offerings to the Lord and suggests that the project
+        involves handling specific proportions or data structures where missing components result in errors.
+      passages: 1
+    - read: Deuteronomy 24
+      score: 0.62
+      why: It describes the legal procedures and restrictions regarding divorce and remarriage, suggesting
+        that a reader might be looking for rules on the dissolution of contracts or the limitations on
+        returning to a previous status.
+      passages: 0
+    reflection: The project prioritizes technical precision and data integrity as a form of moral responsibility
+      toward the user. It seeks to ensure that the software is inclusive, reliable, and consistent in
+      its internal logic. It views the elimination of errors not just as a functional goal, but as a commitment
+      to honesty and fairness.
+  quran-pickthall:
+    title: The Qur'an
+    tradition: Muslim
+    translation: The Meaning of the Glorious Koran, Pickthall, 1930
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: Maintaining honesty and integrity in commercial dealings.
+        ref: Surah Hud 11:85
+        quote: O my people! Give full measure and full weight in justice, and wrong not people in respect
+          of their goods. And do not evil in the earth, causing corruption.
+        read_further: Surah Hud (11)
+        relation: affirms
+        how: This verse explicitly commands giving full measure and weight in justice and forbids wronging
+          people regarding their goods. It directly aligns with the software's goal of ensuring correct
+          charges and honest commercial dealings.
+        status: proposed
+        near:
+        - ref: Surah Ash-Shu'araa 26:181
+          book: Surah Ash-Shu'araa (26)
+          score: 0.584
+        - ref: Surah Al-Israa 17:35
+          book: Surah Al-Israa (17)
+          score: 0.513
+        - ref: Surah Hud 11:85
+          book: Surah Hud (11)
+          score: 0.504
+        - ref: Surah Al-An'aam 6:160
+          book: Surah Al-An'aam (6)
+          score: 0.498
+        - ref: Surah Al-Baqara 2:188
+          book: Surah Al-Baqara (2)
+          score: 0.496
+        - ref: Surah Al-Mutaffifin 83:2
+          book: Surah Al-Mutaffifin (83)
+          score: 0.495
+        - ref: Surah Al-Israa 17:26
+          book: Surah Al-Israa (17)
+          score: 0.492
+        - ref: Surah Al-Baqara 2:282
+          book: Surah Al-Baqara (2)
+          score: 0.492
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The moral obligation to be perfectly honest and precise in financial dealings.
+        ref: Surah Hud 11:85
+        quote: O my people! Give full measure and full weight in justice, and wrong not people in respect
+          of their goods. And do not evil in the earth, causing corruption.
+        read_further: Surah Hud (11)
+        relation: affirms
+        how: This verse explicitly commands giving full measure and weight in justice while forbidding
+          the wronging of people in their goods. It directly aligns with the technical requirement for
+          precision to ensure no one is cheated, even by a single cent.
+        status: proposed
+        near:
+        - ref: Surah Ash-Shu'araa 26:181
+          book: Surah Ash-Shu'araa (26)
+          score: 0.576
+        - ref: Surah Al-Mutaffifin 83:2
+          book: Surah Al-Mutaffifin (83)
+          score: 0.488
+        - ref: Surah Al-Israa 17:35
+          book: Surah Al-Israa (17)
+          score: 0.48
+        - ref: Surah Al-An'aam 6:160
+          book: Surah Al-An'aam (6)
+          score: 0.476
+        - ref: Surah Aal-i-Imraan 3:130
+          book: Surah Aal-i-Imraan (3)
+          score: 0.472
+        - ref: Surah Ash-Shu'araa 26:154
+          book: Surah Ash-Shu'araa (26)
+          score: 0.467
+        - ref: Surah Hud 11:85
+          book: Surah Hud (11)
+          score: 0.466
+        - ref: Surah Aal-i-Imraan 3:17
+          book: Surah Aal-i-Imraan (3)
+          score: 0.456
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: Ensuring accuracy and integrity in records to avoid injustice.
+        ref: Surah Al-Israa 17:35
+        quote: Fill the measure when ye measure, and weigh with a right balance; that is meet, and better
+          in the end.
+        read_further: Surah Al-Israa (17)
+        relation: affirms
+        how: This verse directly addresses the integrity of measurement and the requirement for accuracy
+          in transactions. It aligns with the technical goal of ensuring that data (the 'measure') is
+          recorded correctly to ensure fairness.
+        status: proposed
+        near:
+        - ref: Surah Al-Israa 17:35
+          book: Surah Al-Israa (17)
+          score: 0.5
+        - ref: Surah Ash-Shu'araa 26:182
+          book: Surah Ash-Shu'araa (26)
+          score: 0.473
+        - ref: Surah Al-Anbiyaa 21:47
+          book: Surah Al-Anbiyaa (21)
+          score: 0.426
+        - ref: Surah Taa-Haa 20:135
+          book: Surah Taa-Haa (20)
+          score: 0.425
+        - ref: Surah Al-Israa 17:71
+          book: Surah Al-Israa (17)
+          score: 0.422
+        - ref: Surah Ash-Shu'araa 26:181
+          book: Surah Ash-Shu'araa (26)
+          score: 0.418
+        - ref: Surah Al-A'raaf 7:159
+          book: Surah Al-A'raaf (7)
+          score: 0.416
+        - ref: Surah Ar-Room 30:57
+          book: Surah Ar-Room (30)
+          score: 0.414
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: Showing consideration and kindness toward the needs of others.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Surah Al-Baqara 2:263
+          book: Surah Al-Baqara (2)
+          score: 0.52
+        - ref: Surah An-Nisaa 4:8
+          book: Surah An-Nisaa (4)
+          score: 0.503
+        - ref: Surah Al-Israa 17:26
+          book: Surah Al-Israa (17)
+          score: 0.494
+        - ref: Surah Al-Maa'un 107:7
+          book: Surah Al-Maa'un (107)
+          score: 0.491
+        - ref: Surah An-Nisaa 4:36
+          book: Surah An-Nisaa (4)
+          score: 0.482
+        - ref: Surah Taa-Haa 20:44
+          book: Surah Taa-Haa (20)
+          score: 0.482
+        - ref: Surah Ar-Room 30:38
+          book: Surah Ar-Room (30)
+          score: 0.48
+        - ref: Surah Al-Israa 17:23
+          book: Surah Al-Israa (17)
+          score: 0.47
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity and honesty by refusing to ignore mistakes or shortcuts.
+        ref: Surah Al-Baqara 2:42
+        quote: Confound not truth with falsehood, nor knowingly conceal the truth.
+        read_further: Surah Al-Baqara (2)
+        relation: affirms
+        how: This verse directly addresses the integrity of the work by forbidding the mixing of truth
+          (a passing test) with falsehood (a failing test). It supports the developer's stance that a
+          failure is a reality to be faced, not a truth to be obscured.
+        status: proposed
+        near:
+        - ref: Surah Al-Baqara 2:42
+          book: Surah Al-Baqara (2)
+          score: 0.462
+        - ref: Surah Az-Zumar 39:33
+          book: Surah Az-Zumar (39)
+          score: 0.451
+        - ref: Surah Al-Baqara 2:283
+          book: Surah Al-Baqara (2)
+          score: 0.439
+        - ref: Surah Aal-i-Imraan 3:17
+          book: Surah Aal-i-Imraan (3)
+          score: 0.43
+        - ref: Surah Al-Baqara 2:225
+          book: Surah Al-Baqara (2)
+          score: 0.425
+        - ref: Surah Al-Baqara 2:177
+          book: Surah Al-Baqara (2)
+          score: 0.411
+        - ref: Surah Al-An'aam 6:120
+          book: Surah Al-An'aam (6)
+          score: 0.403
+        - ref: Surah Al-Fajr 89:5
+          book: Surah Al-Fajr (89)
+          score: 0.402
+    reading:
+    - read: Surah Al-Baqara (2)
+      score: 2.44
+      why: It describes the characteristics of successful believers who follow guidance and maintain integrity,
+        suggesting that a project worker should prioritize steadfastness and the consistent upholding
+        of established rules over shortcuts or negligence.
+      passages: 1
+    - read: Surah Al-Israa (17)
+      score: 2.29
+      why: It describes a journey of divine guidance and the consequences of corruption, suggesting that
+        a developer might reflect on the importance of precision and avoiding errors in the system's chronological
+        logic.
+      passages: 1
+    - read: Surah Hud (11)
+      score: 2.23
+      why: It is a scripture about divine guidance, repentance, and accountability, which a worker on
+        this project might interpret as a call for integrity, precision in financial transactions, and
+        ethical conduct in business.
+      passages: 2
+    - read: Surah Ash-Shu'araa (26)
+      score: 1.54
+      why: This text describes the persistence of divine revelation despite human disbelief and the presence
+        of signs in nature, suggesting that a worker might take away the idea of facing resistance to
+        truth or the necessity of recognizing inherent signs within the world.
+      passages: 0
+    - read: Surah An-Nisaa (4)
+      score: 0.35
+      why: It describes the origins of humanity and mandates responsibilities regarding the rights of
+        others, the protection of orphans' wealth, and the necessity of fair treatment in social and familial
+        dealings.
+      passages: 0
+    reflection: The project prioritizes absolute integrity and precision in every transaction, viewing
+      technical accuracy as a moral obligation to the user. It treats software errors and data discrepancies
+      not as mere bugs, but as violations of fairness that must be corrected rather than ignored.
+  book-of-mormon:
+    title: The Book of Mormon
+    tradition: Latter-day Saint
+    translation: 1830 text
+    model: gemma4:12b-it-qat
+    entries:
+      (purpose):
+        why: Take orders for the shop and charge them correctly, in English and Japanese.
+        why_hash: 45b129b4adda
+        concern: The moral obligation to be honest and accurate in one's dealings with others.
+        ref: Mosiah 13:23
+        quote: Thou shalt not bear false witness against thy neighbor.
+        read_further: Mosiah 13
+        relation: affirms
+        how: This passage directly addresses the moral obligation to be honest and truthful in interactions
+          with others. It serves as a foundational prohibition against deception in one's dealings.
+        status: proposed
+        near:
+        - ref: Ether 3:12
+          book: Ether 3
+          score: 0.489
+        - ref: Mosiah 13:23
+          book: Mosiah 13
+          score: 0.483
+        - ref: Alma 41:14
+          book: Alma 41
+          score: 0.477
+        - ref: 1 Nephi 16:3
+          book: 1 Nephi 16
+          score: 0.474
+        - ref: Mosiah 13:22
+          book: Mosiah 13
+          score: 0.471
+        - ref: Moroni 7:15
+          book: Moroni 7
+          score: 0.47
+        - ref: Alma 41:3
+          book: Alma 41
+          score: 0.469
+        - ref: Alma 53:21
+          book: Alma 53
+          score: 0.466
+      rules.decimal-money:
+        why: A float total once made a refund one cent short and the accounts would not reconcile.
+        why_hash: 2228b61bcce4
+        concern: The importance of being honest and accurate in all financial dealings.
+        ref: null
+        quote: null
+        status: no passage
+        near:
+        - ref: Mosiah 13:22
+          book: Mosiah 13
+          score: 0.507
+        - ref: Jacob 4:13
+          book: Jacob 4
+          score: 0.444
+        - ref: Helaman 7:21
+          book: Helaman 7
+          score: 0.444
+        - ref: 1 Nephi 16:3
+          book: 1 Nephi 16
+          score: 0.44
+        - ref: 3 Nephi 13:20
+          book: 3 Nephi 13
+          score: 0.436
+        - ref: 3 Nephi 13:19
+          book: 3 Nephi 13
+          score: 0.435
+        - ref: Moroni 10:6
+          book: Moroni 10
+          score: 0.434
+        - ref: Mosiah 13:23
+          book: Mosiah 13
+          score: 0.43
+      rules.utc-clock:
+        why: Naive local timestamps put orders on the wrong day for the overnight batch.
+        why_hash: 25e68a596f85
+        concern: Ensuring accuracy and integrity in the records of one's actions.
+        ref: Alma 37:2
+        quote: And I also command you that ye keep a record of this people, according as I have done,
+          upon the plates of Nephi, and keep all these things sacred which I have kept, even as I have
+          kept them; for it is for a wise purpose that they are kept.
+        read_further: Alma 37
+        relation: affirms
+        how: This passage emphasizes the importance of keeping a record for a 'wise purpose,' mirroring
+          the developer's goal of maintaining data integrity. It underscores the intentionality and sacredness
+          of accurate record-keeping.
+        status: proposed
+        near:
+        - ref: 3 Nephi 5:18
+          book: 3 Nephi 5
+          score: 0.546
+        - ref: 2 Nephi 18:20
+          book: 2 Nephi 18
+          score: 0.535
+        - ref: Alma 37:2
+          book: Alma 37
+          score: 0.523
+        - ref: 1 Nephi 16:3
+          book: 1 Nephi 16
+          score: 0.521
+        - ref: 3 Nephi 23:7
+          book: 3 Nephi 23
+          score: 0.518
+        - ref: 3 Nephi 5:9
+          book: 3 Nephi 5
+          score: 0.517
+        - ref: Jacob 1:9
+          book: Jacob 1
+          score: 0.516
+        - ref: Mosiah 13:23
+          book: Mosiah 13
+          score: 0.51
+      rules.i18n:
+        why: Half the staff read Japanese; a message added in English only shows them a KeyError.
+        why_hash: e929fd8fd50b
+        concern: Ensuring that everyone is included and understands the message clearly.
+        ref: 2 Nephi 31:3
+        quote: For my soul delighteth in plainness; for after this manner doth the Lord God work among
+          the children of men. For the Lord God giveth light unto the understanding; for he speaketh unto
+          men according to their language, unto their understanding.
+        read_further: 2 Nephi 31
+        relation: affirms
+        how: This passage emphasizes that God speaks to people according to their specific language and
+          level of understanding. It aligns with the goal of ensuring software messages are accessible
+          to all users regardless of their native tongue.
+        status: proposed
+        near:
+        - ref: 2 Nephi 31:3
+          book: 2 Nephi 31
+          score: 0.534
+        - ref: Mosiah 2:8
+          book: Mosiah 2
+          score: 0.518
+        - ref: 2 Nephi 25:4
+          book: 2 Nephi 25
+          score: 0.507
+        - ref: 2 Nephi 16:9
+          book: 2 Nephi 16
+          score: 0.499
+        - ref: Alma 6:5
+          book: Alma 6
+          score: 0.499
+        - ref: 2 Nephi 25:1
+          book: 2 Nephi 25
+          score: 0.491
+        - ref: 3 Nephi 19:33
+          book: 3 Nephi 19
+          score: 0.49
+        - ref: 2 Nephi 29:12
+          book: 2 Nephi 29
+          score: 0.481
+      done.tests-pass:
+        why: A rule test failing is the rule being broken, not a flaky test to skip.
+        why_hash: 885893488f43
+        concern: Maintaining integrity and honesty by refusing to ignore small flaws or shortcuts.
+        ref: Alma 53:21
+        quote: Yea, they were men of truth and soberness, for they had been taught to keep the commandments
+          of God and to walk uprightly before him.
+        read_further: Alma 53
+        relation: affirms
+        how: This passage highlights the importance of being 'men of truth' who are taught to keep commandments
+          and walk uprightly. It aligns with the developer's goal of maintaining integrity by refusing
+          to take shortcuts or ignore flaws.
+        status: proposed
+        near:
+        - ref: 1 Nephi 16:3
+          book: 1 Nephi 16
+          score: 0.54
+        - ref: Mormon 8:36
+          book: Mormon 8
+          score: 0.531
+        - ref: Mosiah 13:22
+          book: Mosiah 13
+          score: 0.512
+        - ref: Alma 53:21
+          book: Alma 53
+          score: 0.5
+        - ref: 2 Nephi 12:9
+          book: 2 Nephi 12
+          score: 0.496
+        - ref: Mosiah 13:23
+          book: Mosiah 13
+          score: 0.494
+        - ref: Alma 7:15
+          book: Alma 7
+          score: 0.487
+        - ref: Alma 63:2
+          book: Alma 63
+          score: 0.486
+    reading:
+    - read: Mosiah 13
+      score: 2.21
+      why: It describes a prophet being persecuted for refusing to compromise his divine message, suggesting
+        that a worker on this project might take it as a call to maintain integrity and fulfill specific
+        duties accurately despite external pressure.
+      passages: 1
+    - read: 2 Nephi 31
+      score: 1.53
+      why: It is about the importance of plainness and clarity in communication, suggesting that the developer
+        should ensure the software provides clear, accessible information to all users regardless of their
+        language settings.
+      passages: 1
+    - read: Alma 53
+      score: 1.18
+      why: It describes the organized supervision of prisoners and the mutual devotion between leaders,
+        suggesting that the project values structural integrity and the importance of upholding established
+        rules over bypassing them.
+      passages: 1
+    - read: Alma 37
+      score: 1.17
+      why: It is about the command to preserve and maintain sacred records for a wise purpose, which a
+        developer might interpret as a mandate for data integrity and the importance of accurate chronological
+        logging.
+      passages: 1
+    - read: 1 Nephi 16
+      score: 0.9
+      why: It describes the difficulty of accepting hard truths and suggests that those who are righteous
+        and willing to listen will be able to bear the truth that others find painful.
+      passages: 0
+    reflection: This project prioritizes the integrity of data and the honesty of transactions as a moral
+      responsibility. It seeks to ensure that the software is inclusive and accessible to all users while
+      maintaining a standard of technical excellence that refuses to overlook flaws.
