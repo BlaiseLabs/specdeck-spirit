@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "specdeck"
+name = "specdeck-spirit"
 version = "0.1.0"
-description = "A requirements-based tool for enforcing AGENTS.md and CLAUDE.md rules: each rule is a requirement with its reason and a check that runs with your pytest tests."
+description = "A fork of specdeck that reads the why of each rule in your spec next to a spiritual text you choose, with open models running locally."
 requires-python = ">=3.10"
 dependencies = [
     "pytest>=7",
@@ -14,6 +14,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest"]
+index = ["numpy"]    # `specdeck spirit index`: optional, searches work without it
 
 [project.scripts]
 specdeck = "specdeck.cli:main"

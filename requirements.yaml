@@ -790,3 +790,47 @@ requirements:
     and the descriptions stay ours.
   type: process
   verification: inspection
+
+# The spirit layer: what this fork adds to specdeck.
+- id: spirit.quotes-are-the-texts
+  statement: A quoted passage shall be the fetched text's own words, whatever the model answers.
+  rationale: >-
+    People read these as scripture. A model that writes a verse that doesn't exist would put words in a holy text, so the
+    model only ever chooses a passage by its number.
+  type: design-constraint
+
+- id: spirit.none-fits
+  statement: A why with no fitting passage shall be recorded with no passage rather than given the nearest one.
+  rationale: A forced match teaches people to distrust every other match, and it makes a sacred text say what it doesn't.
+  type: functional
+
+- id: spirit.person-decides
+  statement: A proposed passage shall stay a proposal until a person keeps it, and a rejected passage shall not be offered again for that why.
+  rationale: What a text means for someone's work is theirs to decide. A model can only suggest.
+  type: functional
+
+- id: spirit.stale-why
+  statement: "`specdeck spirit check` shall report a why that changed after it was aligned, a why with no entry, and a quote that differs from the text."
+  rationale: The ledger is only worth reading while it matches the spec and the text, and both change.
+  type: functional
+
+- id: spirit.rule-shows-passage
+  statement: The agent instructions and the report of a broken rule shall show the passage held next to that rule, unless it was rejected.
+  rationale: The reason a rule exists matters most at the moment someone is about to break it or just has.
+  type: functional
+
+- id: spirit.any-tradition
+  statement: A person shall be able to add a text of their own from plain text or JSON lines and align with it like any other.
+  rationale: The catalogue is only what could be found openly licensed. Leaving out someone's tradition can't be the tool's decision.
+  type: functional
+
+- id: spirit.local-models
+  statement: The layer shall reach models only through a local Ollama address unless the person sets another.
+  rationale: Someone's faith and their project's reasons are private, and the open models are what makes the feature work.
+  type: design-constraint
+  verification: inspection
+
+- id: spirit.reading-exists
+  statement: Each further reading named shall be a part of the text the searches actually found.
+  rationale: A reading list is a promise that the part exists and came from the project's own reasons.
+  type: functional

@@ -198,6 +198,9 @@ def main(argv=None) -> int:
     b.add_argument("--format", choices=("text", "json"), default="text")
     b.add_argument("--all", action="store_true", help="every requirement, not only rules with a check or a break")
     _add_rules(sub)
+    from .spirit.cli import add_parser as _add_spirit
+
+    _add_spirit(sub)
     _add_watch(sub)
     _add_history(sub)
     args = ap.parse_args(argv)
@@ -227,6 +230,10 @@ def _dispatch(args) -> int:
         return cmd_check(args)
     if args.cmd == "rules":
         return cmd_rules(args)
+    if args.cmd == "spirit":
+        from .spirit.cli import run
+
+        return run(args)
     if args.cmd == "breaks":
         return cmd_breaks(args)
     if args.cmd == "watch":

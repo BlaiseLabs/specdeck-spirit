@@ -6,3 +6,4 @@ build/
 dist/
 # generated on every pytest run; commit it only where it is the published spec
 .specdeck/
+.venv/

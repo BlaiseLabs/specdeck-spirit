@@ -34,6 +34,7 @@ import yaml
 
 from .editing import step_calls
 from .needs import write_needs
+from .spirit.align import verse_for
 
 __version__ = "0.1.0"
 
@@ -843,6 +844,11 @@ def pytest_sessionfinish(session: pytest.Session, exitstatus: int) -> None:
                     named = f" ({', '.join(ids[:4])}{', …' if len(ids) > 4 else ''})" if k in ("failing", "blocked") else ""
                     bits.append(f"{len(ids)} {k}{named}")
             tr.write_line(f"specdeck: requirements: {', '.join(bits)} + {rp.name}")
+            for r in rep["requirements"]:
+                verse = verse_for(r["id"], config.rootpath) if r["status"] == "failing" and r["id"] not in check_results else None
+                if verse:   # a rule its test broke; a broken check quotes below, with its evidence
+                    tr.write_line(f"specdeck: rule {r['id']} broken", red=True)
+                    tr.write_line(f"  \"{verse['quote']}\" ({verse['ref']})", red=True)
             for u in rep["unknown"]:
                 tr.write_line(f"specdeck: warning: {', '.join(u['scenarios'])} covers {u['id']!r}, "
                               f"which isn't in the requirements file", yellow=True)
@@ -851,6 +857,9 @@ def pytest_sessionfinish(session: pytest.Session, exitstatus: int) -> None:
             for rid, res in check_results.items():
                 if res.state == "broken":
                     tr.write_line(f"specdeck: rule {rid} broken: {'; '.join(res.evidence[:3])}", red=True)
+                    verse = verse_for(rid, config.rootpath)
+                    if verse:
+                        tr.write_line(f"  \"{verse['quote']}\" ({verse['ref']})", red=True)
                 elif res.state == "error":
                     tr.write_line(f"specdeck: warning: the check of {rid} could not run: {res.error}", yellow=True)
         for w in store.warnings:
