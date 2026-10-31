@@ -2,12 +2,12 @@
 title: "A float broke my refund rule, and Leviticus had an opinion"
 published: true
 tags: devchallenge, hf26challenge, gemma, python
-cover_image: https://github.com/BlaiseLabs/specdeck-spirit/releases/download/v0.1.0/spirit.gif
+cover_image: https://raw.githubusercontent.com/BlaiseLabs/specdeck-spirit/main/docs/article/spirit.gif
 ---
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4](https://dev.to/challenges/hacktoberfest-week4-2026-10-26)*
 
-![specdeck-spirit, a broken rule printed with its passage](https://github.com/BlaiseLabs/specdeck-spirit/releases/download/v0.1.0/spirit.gif)
+![specdeck-spirit, a broken rule printed with its passage](https://raw.githubusercontent.com/BlaiseLabs/specdeck-spirit/main/docs/article/spirit.gif)
 
 I have a small tool called specdeck that keeps a project's rules as requirements, each with a statement, a reason and a check. Here's one from an example shop project.
 
