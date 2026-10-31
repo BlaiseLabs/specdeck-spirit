@@ -1,3 +1,80 @@
+# specdeck-spirit
+
+A fork of [specdeck](https://github.com/BlaiseLabs/specdeck) that reads the why of each rule in your spec next to a spiritual text you choose.
+
+specdeck keeps each rule as a requirement with a statement, a reason and a check. This fork adds one layer on top of those reasons. For each one, open models running on your own machine look through the Bible, the Qur'an, the Dhammapada, the Kojiki or any text you add, and propose the passage that speaks to it. You keep the ones that mean something to you and reject the rest. When a rule breaks, its passage is printed under it.
+
+```
+specdeck: rule rules.decimal-money broken
+  "RESULT_VERSE" (RESULT_REF)
+```
+
+Everything else specdeck does is unchanged, and it's all documented below the line further down.
+
+## Try it
+
+You need [Ollama](https://ollama.com) with two open models.
+
+```bash
+ollama pull gemma4:12b-it-qat
+ollama pull embeddinggemma
+pip install -e ".[index]"
+
+specdeck spirit texts                     # what can be fetched
+specdeck spirit fetch dhammapada          # downloaded once, kept in ~/.specdeck/spirit
+specdeck spirit index dhammapada          # optional, lets meaning find passages keywords can't
+specdeck spirit align --text dhammapada   # a proposal for every why in requirements.yaml
+specdeck spirit show
+specdeck spirit keep rules.decimal-money
+specdeck spirit reject rules.utc-clock    # the next align offers another
+specdeck spirit read                      # what to read further, and a short reflection
+specdeck spirit report                    # SPIRIT.md
+specdeck spirit check --fail              # every why aligned and current, every quote word for word
+```
+
+`examples/agent-rules/spirit-demo.sh` shows the whole thing on a small shop project using saved alignments, so it doesn't need a model.
+
+## The texts
+
+| id | Tradition | Text and translation | Licence | Source |
+|---|---|---|---|---|
+| `bible-kjv` | Christian | The Holy Bible, King James Version, 1611 | public domain in the US | thiagobodruk/bible |
+| `tanakh-jps` | Jewish | The Tanakh, Jewish Publication Society, 1917 | public domain | Sefaria export |
+| `quran-pickthall` | Muslim | The Meaning of the Glorious Koran, Pickthall, 1930 | public domain in the US | api.alquran.cloud |
+| `dhammapada` | Buddhist | The Dhammapada, Bhikkhu Sujato | CC0 | SuttaCentral |
+| `gita-arnold` | Hindu | The Bhagavad Gita as The Song Celestial, Edwin Arnold, 1885 | public domain | Project Gutenberg |
+| `kojiki` | Shinto | The Kojiki, Basil Hall Chamberlain, 1882 | public domain | Wikisource |
+| `tao-te-ching` | Taoist | The Tao Te Ching, James Legge, 1891 | public domain | Project Gutenberg |
+| `analects` | Confucian | The Analects, James Legge, 1861 | public domain | Project Gutenberg |
+| `meditations` | Stoic | Meditations of Marcus Aurelius, Meric Casaubon, 1634 | public domain | Project Gutenberg |
+| `book-of-mormon` | Latter-day Saint | The Book of Mormon | public domain | Project Gutenberg |
+
+This list is only what could be found openly licensed in English. It isn't a judgement about what counts. Your own text goes in the same way, as plain text with a blank line between passages or as JSON lines with `ref` and `text`.
+
+```bash
+specdeck spirit add-text gurbani gurbani.jsonl --title "Guru Granth Sahib" --tradition Sikh
+```
+
+## How a passage gets chosen
+
+1. Gemma says what human concern sits under the why, leaving the technology behind, and what words this text uses for it.
+2. BM25 finds passages with those words, and EmbeddingGemma finds passages with that meaning. The best 8 go on.
+3. Gemma picks one by its number, or says none fits.
+
+The model only ever answers with a number. The quote comes out of the fetched text, so it can't invent a verse, and `specdeck spirit check` compares every quote with the text again. Further reading is counted from where the searches landed, so every part it names exists. The model only says why it might be worth reading.
+
+Choices go in `spirit.yaml`, which you commit with the project. A passage stays `proposed` until you keep it. A why that changes needs aligning again, and `check` says so.
+
+## What this is not
+
+It isn't religious advice, and a model finding a connection doesn't mean a tradition teaches it. These are suggestions for someone who already reads the text. The models run locally because someone's faith and their project's reasons are private, and nothing is sent anywhere.
+
+The translations are old because old ones are the ones anyone may share, so they carry the language and views of their translators. Many Muslims hold that a translation of the Qur'an is an interpretation and not the Qur'an itself, and the same care applies to every text here. It's English only for now.
+
+---
+
+Everything below is specdeck itself, unchanged.
+
 # specdeck
 
 Enforce your CLAUDE.md and AGENTS.md rules with tests.

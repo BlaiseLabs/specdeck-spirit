@@ -248,7 +248,7 @@ CATALOGUE = {t.id: t for t in [
     Text("kojiki", "The Kojiki", "Shinto", "Basil Hall Chamberlain, 1882", "public domain", "Wikisource", kojiki),
     Text("tao-te-ching", "The Tao Te Ching", "Taoist", "James Legge, 1891", "public domain", "Project Gutenberg 216", tao),
     Text("analects", "The Analects", "Confucian", "James Legge, 1861", "public domain", "Project Gutenberg 3330", analects),
-    Text("meditations", "Meditations of Marcus Aurelius", "Stoic", "Jeremy Collier, 1701, revised Zimmern", "public domain",
+    Text("meditations", "Meditations of Marcus Aurelius", "Stoic", "Meric Casaubon, 1634", "public domain",
          "Project Gutenberg 2680", meditations),
     Text("book-of-mormon", "The Book of Mormon", "Latter-day Saint", "Project Gutenberg edition", "public domain", "Project Gutenberg 17",
          book_of_mormon),

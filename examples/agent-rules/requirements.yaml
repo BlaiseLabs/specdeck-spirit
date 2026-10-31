@@ -1,5 +1,7 @@
 # The shop's "never" rules, kept as requirements: each with its reason and the test that checks it.
 # `specdeck agents` writes them into AGENTS.md with their status from the last test run.
+srs:
+  purpose: Take orders for the shop and charge them correctly, in English and Japanese.
 requirements:
   - id: rules.decimal-money
     statement: Money amounts shall be Decimal values, with no float anywhere in the shop package.
