@@ -29,7 +29,7 @@ th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; ver
 <main>
 <nav><a href="../">Back</a></nav>
 <h1>From Spec-Driven to Faith-Driven Development</h1>
-<p><em>This is a submission for the <a href="https://dev.to/challenges/hacktoberfest-week4-2026-10-26">Hacktoberfest Open-Source AI Challenge Week 4</a></em></p>
+<p><em>This is a submission for the <a href="https://dev.to/challenges/hacktoberfest-week4-2026-10-26">Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine</a></em></p>
 <p><img alt="specdeck-spirit, a broken rule printed with its passage" src="spirit.gif" /></p>
 <p>I have a small tool called specdeck that keeps a project's rules as requirements, each with a statement, a reason and a check. Here's one from an example shop project.</p>
 <pre><code class="language-yaml">- id: rules.decimal-money
@@ -53,8 +53,9 @@ specdeck spirit read
 <p>For each reason in your spec and for the project's purpose, it proposes a passage, says how the passage bears on the reason, and suggests what to read further. You keep the ones that mean something to you and reject the rest. Passages you keep show up under the rule in AGENTS.md and CLAUDE.md, so the next agent session sees them too, and under the rule when it breaks.</p>
 <p>It comes with ten texts, which is what I could find openly licensed in English. That's the King James Bible, the Tanakh, the Qur'an, the Dhammapada, the Bhagavad Gita, the Kojiki, the Tao Te Ching, the Analects, the Meditations of Marcus Aurelius and the Book of Mormon. That list isn't a judgement about what counts, so <code>specdeck spirit add-text</code> takes any text of your own.</p>
 <p>To be plain about what's new, specdeck itself existed before this week. The spirit layer, its tests and the fork are what I built for this challenge.</p>
+<p>For the Ghost in the Machine theme I took the side about honoring the past. These are some of the oldest things anyone wrote down about why to do things right, and their authors are long dead, so this puts their words next to the reasons in a modern codebase. It's for people who build software and also read one of these texts, and who want the two in the same place.</p>
 <h2>Demo</h2>
-<p>Here's the same rule, the same reason, and what came back from each text on a local Gemma.</p>
+<p>The recording at the top of this post is the tool running on an example shop project. Here's the same rule, the same reason, and what came back from each text on a local Gemma.</p>
 <table>
 <thead>
 <tr>
@@ -96,6 +97,9 @@ specdeck spirit read
 <p>Each search only ever sees one text, so nothing here was comparing notes. The Bible and the Tanakh share that verse, so them agreeing makes sense, but the Qur'an got to the same idea through its own verse and the Analects got to something close from a completely different direction. An honest measure turns out to be a very old concern.</p>
 <p>The rule about tests landed somewhere I liked too. Its reason says a failing rule test is the rule being broken, not a flaky test to skip, and the Qur'an came back with "Confound not truth with falsehood, nor knowingly conceal the truth" (Surah Al-Baqara 2:42).</p>
 <p>The full output for ten texts is in <a href="https://github.com/BlaiseLabs/specdeck-spirit/blob/main/examples/agent-rules/SPIRIT.md">SPIRIT.md</a>. You can also clone the repo and run <code>examples/agent-rules/spirit-demo.sh</code>, which uses the saved results and doesn't need a model.</p>
+<h2>Code</h2>
+<p><a href="https://github.com/BlaiseLabs/specdeck-spirit">github.com/BlaiseLabs/specdeck-spirit</a></p>
+<p>The original, without the spirit layer, is at <a href="https://github.com/BlaiseLabs/specdeck">BlaiseLabs/specdeck</a>.</p>
 <h2>How I Built It</h2>
 <p>A reason like "the float made a refund one cent short" shares no words with Leviticus, so plain search finds nothing. It takes three steps.</p>
 <ol>
@@ -127,14 +131,11 @@ specdeck spirit read
 <ul>
 <li><strong>Faith is private.</strong> Which text you read, and which of your project's reasons you hold it next to, is nobody's business. Gemma and EmbeddingGemma run locally through Ollama, so none of that leaves the machine.</li>
 <li><strong>It's a lot of embedding for a joke that turned out useful.</strong> The Bible alone is 31,102 verses, and it took about half an hour on a base Mac mini. Running that locally costs nothing, so I could index all ten texts without thinking about it.</li>
-<li><strong>The texts are open because people made them open.</strong> Sefaria, SuttaCentral, Project Gutenberg, Wikisource and the people behind the open Bible and Qur'an datasets did the real work here. Bhikkhu Sujato put his translation in the public domain on purpose. Anyone can add a tradition I missed, and I missed a lot.</li>
+<li><strong>The texts are open because people made them open.</strong> Sefaria, SuttaCentral, Project Gutenberg, Wikisource and the people behind the open Bible and Qur'an datasets did the real work here, and the <a href="https://github.com/BlaiseLabs/specdeck-spirit#readme">README</a> lists each text with its source and licence. Bhikkhu Sujato put his translation in the public domain on purpose. Anyone can add a tradition I missed, and I missed a lot.</li>
 </ul>
 <p>One limit comes with that. Old translations are the ones anyone may share, so they carry the views of their translators, and many Muslims hold that a translation of the Qur'an is an interpretation and not the Qur'an itself. This isn't religious advice either. A model finding a connection doesn't mean a tradition teaches it.</p>
 <h2>The Spirit of It</h2>
 <p>The challenge's closing date is Halloween, right as Día de los Muertos begins, and both are about the dead still having something to say to us. I think that's what this is, in a small and slightly ridiculous way. Somebody wrote down that a false weight is wrong long before anyone had a refund to get wrong, and now it prints under my test failure.</p>
-<h2>Code</h2>
-<p><a href="https://github.com/BlaiseLabs/specdeck-spirit">github.com/BlaiseLabs/specdeck-spirit</a></p>
-<p>The original, without the spirit layer, is at <a href="https://github.com/BlaiseLabs/specdeck">BlaiseLabs/specdeck</a>.</p>
 <h2>Prize Categories</h2>
 <ul>
 <li><strong>Best Use of Gemma.</strong> Gemma 4 12B finds the concern under each reason and picks the passage, and EmbeddingGemma searches every passage of every text, all running locally through Ollama.</li>

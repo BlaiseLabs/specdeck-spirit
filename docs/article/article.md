@@ -5,7 +5,7 @@ tags: devchallenge, hf26challenge, gemma, python
 cover_image: https://raw.githubusercontent.com/BlaiseLabs/specdeck-spirit/main/docs/article/spirit.gif
 ---
 
-*This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4](https://dev.to/challenges/hacktoberfest-week4-2026-10-26)*
+*This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-week4-2026-10-26)*
 
 ![specdeck-spirit, a broken rule printed with its passage](https://raw.githubusercontent.com/BlaiseLabs/specdeck-spirit/main/docs/article/spirit.gif)
 
@@ -45,9 +45,11 @@ It comes with ten texts, which is what I could find openly licensed in English. 
 
 To be plain about what's new, specdeck itself existed before this week. The spirit layer, its tests and the fork are what I built for this challenge.
 
+For the Ghost in the Machine theme I took the side about honoring the past. These are some of the oldest things anyone wrote down about why to do things right, and their authors are long dead, so this puts their words next to the reasons in a modern codebase. It's for people who build software and also read one of these texts, and who want the two in the same place.
+
 ## Demo
 
-Here's the same rule, the same reason, and what came back from each text on a local Gemma.
+The recording at the top of this post is the tool running on an example shop project. Here's the same rule, the same reason, and what came back from each text on a local Gemma.
 
 | Text | Passage for "a float made a refund one cent short" |
 |---|---|
@@ -64,6 +66,12 @@ Each search only ever sees one text, so nothing here was comparing notes. The Bi
 The rule about tests landed somewhere I liked too. Its reason says a failing rule test is the rule being broken, not a flaky test to skip, and the Qur'an came back with "Confound not truth with falsehood, nor knowingly conceal the truth" (Surah Al-Baqara 2:42).
 
 The full output for ten texts is in [SPIRIT.md](https://github.com/BlaiseLabs/specdeck-spirit/blob/main/examples/agent-rules/SPIRIT.md). You can also clone the repo and run `examples/agent-rules/spirit-demo.sh`, which uses the saved results and doesn't need a model.
+
+## Code
+
+{% github BlaiseLabs/specdeck-spirit %}
+
+The original, without the spirit layer, is at [BlaiseLabs/specdeck](https://github.com/BlaiseLabs/specdeck).
 
 ## How I Built It
 
@@ -117,19 +125,13 @@ None of this is the Bible talking about my code. A model picked these and I'm th
 
 - **Faith is private.** Which text you read, and which of your project's reasons you hold it next to, is nobody's business. Gemma and EmbeddingGemma run locally through Ollama, so none of that leaves the machine.
 - **It's a lot of embedding for a joke that turned out useful.** The Bible alone is 31,102 verses, and it took about half an hour on a base Mac mini. Running that locally costs nothing, so I could index all ten texts without thinking about it.
-- **The texts are open because people made them open.** Sefaria, SuttaCentral, Project Gutenberg, Wikisource and the people behind the open Bible and Qur'an datasets did the real work here. Bhikkhu Sujato put his translation in the public domain on purpose. Anyone can add a tradition I missed, and I missed a lot.
+- **The texts are open because people made them open.** Sefaria, SuttaCentral, Project Gutenberg, Wikisource and the people behind the open Bible and Qur'an datasets did the real work here, and the [README](https://github.com/BlaiseLabs/specdeck-spirit#readme) lists each text with its source and licence. Bhikkhu Sujato put his translation in the public domain on purpose. Anyone can add a tradition I missed, and I missed a lot.
 
 One limit comes with that. Old translations are the ones anyone may share, so they carry the views of their translators, and many Muslims hold that a translation of the Qur'an is an interpretation and not the Qur'an itself. This isn't religious advice either. A model finding a connection doesn't mean a tradition teaches it.
 
 ## The Spirit of It
 
 The challenge's closing date is Halloween, right as Día de los Muertos begins, and both are about the dead still having something to say to us. I think that's what this is, in a small and slightly ridiculous way. Somebody wrote down that a false weight is wrong long before anyone had a refund to get wrong, and now it prints under my test failure.
-
-## Code
-
-{% github BlaiseLabs/specdeck-spirit %}
-
-The original, without the spirit layer, is at [BlaiseLabs/specdeck](https://github.com/BlaiseLabs/specdeck).
 
 ## Prize Categories
 
